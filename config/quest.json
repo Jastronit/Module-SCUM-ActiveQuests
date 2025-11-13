@@ -1,0 +1,101 @@
+{
+  "refresh_interval": 4,
+  "time_simulation_duration": 120,
+  "time_remaining_format": "%dd %hh %mm %ss",
+  "font_family": "Consolas",
+  "default_font_size": 8,
+  "token_colors": {
+    "quest_count": "#ff8000",
+    "id": "#ffff00",
+    "sector": "#00ff00",
+    "time_remaining": "dynamic",
+    "filter_enabled": "#00ff00",
+    "filter_active_sectors": "#00ff00",
+    "sort_keys": "#ffff00",
+    "sort_order": "#80ff80"
+  },
+  "time_remaining_colors": {
+    "172800": "#00ff00",
+    "86400": "#80ff80",
+    "43200": "#ffff00",
+    "21600": "#ffaa00",
+    "14400": "#ff8000",
+    "7200": "#ff4000",
+    "3600": "#ff0000",
+    "0": "#000000"
+  },
+  "sector_token_colors": {},
+  "header": [
+    {
+      "font": "Comic Sans MS",
+      "size": 16,
+      "color": "#ffff00",
+      "data": "🧭️ Active quests: %quest_count% "
+    },
+    {
+      "font": "Consolas",
+      "size": 8,
+      "color": "#ffffff",
+      "data": "Last sync: %timestamp%"
+    },
+    {
+      "font": "Consolas",
+      "size": 10,
+      "color": "#ffffff",
+      "data": "Sort: %sort_keys% (%sort_order%)"
+    },
+    {
+      "font": "Consolas",
+      "size": 10,
+      "color": "#ffffff",
+      "data": "Filter: %filter_enabled% Sectors: %filter_active_sectors%"
+    }
+  ],
+  "lines": [
+    {
+      "font": "Consolas",
+      "size": 12,
+      "color": "#ffffff",
+      "data": "📜%id% 🗺️%sector% ⏱️ %time_remaining%"
+    },
+    {
+      "font": "Consolas",
+      "size": 8,
+      "color": "#cccccc",
+      "data": "Asset: %quest_data_asset_path%"
+    },
+    {
+      "font": "Consolas",
+      "size": 4,
+      "color": "#ffffff",
+      "data": "____________________________________________________________________________________________________________"
+    }
+  ],
+  "filter": {
+    "enabled": false,
+    "sectors": {
+      "A0": false,
+      "Z3": false,
+      "B4": false,
+      "C2": false
+    }
+  },
+  "sort": {
+    "keys": [
+      "time_remaining"
+    ],
+    "order": "asc"
+  },
+  "shortcuts": {
+    "toggle_filter": "ctrl+alt+f",
+    "toggle_sector_A0": "ctrl+alt+a",
+    "toggle_sector_Z3": "ctrl+alt+z",
+    "toggle_sector_B4": "ctrl+alt+b",
+    "toggle_sector_C2": "ctrl+alt+c",
+    "sort_order_asc": "ctrl+alt+u",
+    "sort_order_desc": "ctrl+alt+d",
+    "cycle_sort_key": "ctrl+alt+n",
+    "add_sort_key": "ctrl+alt+m",
+    "clear_sort_keys": "ctrl+alt+r"
+  }
+}

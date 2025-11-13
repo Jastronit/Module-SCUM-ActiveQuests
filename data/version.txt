@@ -1,0 +1,57 @@
+[Module] Quest
+[Access] SCUM.db
+
+[1.0] Alpha
+Logika:
+Automatická detekcia SinglePlayer databázy.
+Optimalizácia prístupu k databáze cez indexovanie.
+Získanie aktívneho hráča a všetky jeho questy.
+Získanie všetkých potrebných parametrov questu.
+Získanie hodnoty času použitého v questoch. 
+
+Zobrazenie:
+Každý riadok má vlastné nastavenia veľkosti, typu a farby písma.
+Možnosť formátovania hlavičky do viacerých riadkov s vlastnými dátami.
+Možnosť formátovania questov do viacerých riadkov s vlastnými dátami.
+Pridané nastavenia na formátovanie zobrazenia odpočtového času questov od hodín po sekundy.
+Pridaná simulácia medzi aktualizáciou času questov s databázy.
+Pridaná možnosť nastaviť odlišné farby na zvýraznenie odlišných hodnôt.
+Pridaná možnosť nastaviť odlišné farby podľa zostávajúceho času questu.
+Pridané zoradenie questov podľa navoléneho kľuča.
+Pridaná možnosť viac úrovňového zoradenia s neobmedzeným počtom kľúčov.
+Pridaná možnosť prepínať smer zoradenia abecedne.
+Pridaný filter na možnosť filtrovať len niektoré sektori.
+Pridané skratky jednoduché prepínanie zoradenia a filtra.
+Pridaná podpora pre preklad questov do viacerých jazykov.
+
+Pridaný widget custom_overlay.py
+Pridaný widget console.py
+Pridaný widget settings.py
+
+[Module] Quest
+[Access] SCUM.db
+
+[1.0] Alpha
+[Logic]
+
+Automatic detection of the SinglePlayer database.
+Optimized database access through indexing.
+Retrieval of the active player and all their quests.
+Retrieval of all required quest parameters.
+Retrieval of the time values used in quests.
+
+[Display]
+
+Each line has its own font size, type, and color settings.
+Option to format the header into multiple lines with custom data.
+Option to format quests into multiple lines with custom data.
+Added settings for formatting quest countdown timers — from hours down to seconds.
+Added simulation between quest time updates from the database.
+Added the ability to set different colors to highlight varying values.
+Added the ability to set different colors based on remaining quest time.
+Added quest sorting by a selected key.
+Added multi-level sorting with an unlimited number of keys.
+Added the ability to toggle sorting order alphabetically.
+Added a filter to display only selected sectors.
+Added shortcuts for easy switching of sorting and filtering.
+

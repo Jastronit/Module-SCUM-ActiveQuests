@@ -130,18 +130,52 @@ def load_or_create_config():
 # ////-----------------------------------------------------------------------------------------
 
 # ////---- Detekcia aktívneho hráča cez flag=0 ----////
-def get_active_user_profile_id(conn):
+def get_active_user_profile_id_old(conn):
     cursor = conn.cursor()
     cursor.execute("""
         SELECT entity_system_id
         FROM entity
-        WHERE class = 'FPrisonerEntity' AND flags = 0
+        WHERE class = 'BP_Prisoner_ES' AND flags = 0
     """)
     row = cursor.fetchone()
     if not row:
         return None
     entity_system_id = row['entity_system_id']
 
+    cursor.execute("""
+        SELECT user_profile_id
+        FROM entity_system
+        WHERE id = ?
+    """, (entity_system_id,))
+    result = cursor.fetchone()
+    return result['user_profile_id'] if result else None
+
+def get_active_user_profile_id(conn):
+    cursor = conn.cursor()
+    
+    # Skús najskôr v1.2 (BP_Prisoner_ES)
+    cursor.execute("""
+        SELECT entity_system_id
+        FROM entity
+        WHERE class = 'BP_Prisoner_ES' AND flags = 0
+    """)
+    row = cursor.fetchone()
+    
+    # Ak nenájdeš v1.2, skús v1.1 (FPrisonerEntity)
+    if not row:
+        cursor.execute("""
+            SELECT entity_system_id
+            FROM entity
+            WHERE class = 'FPrisonerEntity' AND flags = 0
+        """)
+        row = cursor.fetchone()
+    
+    # Ak stále nič, vráť None
+    if not row:
+        return None
+    
+    entity_system_id = row['entity_system_id']
+    
     cursor.execute("""
         SELECT user_profile_id
         FROM entity_system
@@ -266,14 +300,14 @@ def main_loop(conn=None, stop_event=None):
             user_profile_id = get_active_user_profile_id(conn)
 
             if not user_profile_id:
-                log_to_console("[ActiveQuests] Nebol nájdený aktívny hráč. Quest.json bude vyčistený.")
+                # log_to_console("[ActiveQuests] Nebol nájdený aktívny hráč. Quest.json bude vyčistený.")
                 clear_quest_json()
             else:
                 quests = get_active_quests(conn, user_profile_id)
                 quests = attach_tracking_data(conn, quests)
                 timestamp = get_world_timestamp(conn, user_profile_id)
                 save_quests_to_json(user_profile_id, timestamp, quests)
-                log_to_console(f"[ActiveQuests] Načítaných {len(quests)} aktívnych questov pre hráča ID {user_profile_id}.")
+                # log_to_console(f"[ActiveQuests] Načítaných {len(quests)} aktívnych questov pre hráča ID {user_profile_id}.")
 
         except Exception as e:
             log_to_console(f"[ActiveQuests] Chyba: {e}")

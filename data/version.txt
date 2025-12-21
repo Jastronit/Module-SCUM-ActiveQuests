@@ -2,46 +2,14 @@
 [Access] SCUM.db
 
 [1.0] Alpha
-Logika:
-Automatická detekcia SinglePlayer databázy.
-Optimalizácia prístupu k databáze cez indexovanie.
-Získanie aktívneho hráča a všetky jeho questy.
-Získanie všetkých potrebných parametrov questu.
-Získanie hodnoty času použitého v questoch. 
-
-Zobrazenie:
-Každý riadok má vlastné nastavenia veľkosti, typu a farby písma.
-Možnosť formátovania hlavičky do viacerých riadkov s vlastnými dátami.
-Možnosť formátovania questov do viacerých riadkov s vlastnými dátami.
-Pridané nastavenia na formátovanie zobrazenia odpočtového času questov od hodín po sekundy.
-Pridaná simulácia medzi aktualizáciou času questov s databázy.
-Pridaná možnosť nastaviť odlišné farby na zvýraznenie odlišných hodnôt.
-Pridaná možnosť nastaviť odlišné farby podľa zostávajúceho času questu.
-Pridané zoradenie questov podľa navoléneho kľuča.
-Pridaná možnosť viac úrovňového zoradenia s neobmedzeným počtom kľúčov.
-Pridaná možnosť prepínať smer zoradenia abecedne.
-Pridaný filter na možnosť filtrovať len niektoré sektori.
-Pridané skratky jednoduché prepínanie zoradenia a filtra.
-Pridaná podpora pre preklad questov do viacerých jazykov.
-
-Pridaný widget custom_overlay.py
-Pridaný widget console.py
-Pridaný widget settings.py
-
-[Module] Quest
-[Access] SCUM.db
-
-[1.0] Alpha
 [Logic]
-
 Automatic detection of the SinglePlayer database.
 Optimized database access through indexing.
 Retrieval of the active player and all their quests.
 Retrieval of all required quest parameters.
 Retrieval of the time values used in quests.
 
-[Display]
-
+[Other]
 Each line has its own font size, type, and color settings.
 Option to format the header into multiple lines with custom data.
 Option to format quests into multiple lines with custom data.
@@ -55,3 +23,25 @@ Added the ability to toggle sorting order alphabetically.
 Added a filter to display only selected sectors.
 Added shortcuts for easy switching of sorting and filtering.
 
+[1.1] Alpha
+Added 3 new multi-level sorting modes.
+Added a new quest translation structure.
+Added the option to format quest translations into multiple lines.
+Added additional quests and their associated data.
+Quest data detection based solely on the quest name.
+
+[2.0] Beta
+[Logic]
+Added support for the new game version v1.2 while maintaining support for older versions.
+
+[Other]
+Reworked rendering from QLabel to QTextBrowser for better optimization.
+Reworked background color customization for the new QTextBrowser renderer using custom overlay widgets.
+Reworked dynamic window resizing to align automatically with rendered text content.
+Added a shop filter with new keyboard shortcuts.
+Added additional quests and their associated data.
+Added the ability to select exactly which data should be displayed.
+Added the ability to switch between quest pages using shortcuts and to adjust the number of quests displayed per page.
+Added the Files widget.
+Removed the Settings widget (temporarily fully replaced by the Files widget).
+Fixed a bug in the Custom Overlays widget where spin boxes for the overall overlay background were not updating after selecting an overlay window from the list.

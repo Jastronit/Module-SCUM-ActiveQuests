@@ -8,11 +8,22 @@
     "quest_count": "#ff8000",
     "id": "#ffff00",
     "sector": "#00ff00",
+    "shop": "#ff8000",
     "time_remaining": "dynamic",
+    "tier": "#ffff00",
     "filter_enabled": "#00ff00",
     "filter_active_sectors": "#00ff00",
+    "filter_active_shops": "#00ff00",
     "sort_keys": "#ffff00",
-    "sort_order": "#80ff80"
+    "sort_order": "#80ff80",
+    "data": "#00ffff",
+    "quest_data_asset_path": "#ffffff",
+    "req_data": "#00ffff",
+    "display_name": "#00ff00",
+    "display_description": "#00ff00",
+    "display_requirements": "#00ff00",
+    "display_rewards": "#00ff00",
+    "display_data": "#00ff00"
   },
   "time_remaining_colors": {
     "172800": "#00ff00",
@@ -34,12 +45,6 @@
     },
     {
       "font": "Consolas",
-      "size": 8,
-      "color": "#ffffff",
-      "data": "Last sync: %timestamp%"
-    },
-    {
-      "font": "Consolas",
       "size": 10,
       "color": "#ffffff",
       "data": "Sort: %sort_keys% (%sort_order%)"
@@ -48,36 +53,65 @@
       "font": "Consolas",
       "size": 10,
       "color": "#ffffff",
-      "data": "Filter: %filter_enabled% Sectors: %filter_active_sectors%"
+      "data": "Filter: %filter_enabled% Sectors: %filter_active_sectors% Shops: %filter_active_shops%"
+    },
+    {
+      "font": "Consolas",
+      "size": 8,
+      "color": "#808080",
+      "data": "Display: Name:%display_name% Desc:%display_description% Req:%display_requirements% Rew:%display_rewards% Data:%display_data%"
+    },
+    {
+      "data": "%page_info%",
+      "color": "#ff8000",
+      "size": 8
     }
   ],
   "lines": [
     {
       "font": "Consolas",
-      "size": 12,
+      "size": 10,
       "color": "#ffffff",
-      "data": "📜%id% 🗺️%sector% ⏱️ %time_remaining%"
+      "data": "📜%id% 🏆️%tier% 🗺️%sector% 🛍️%shop% ⏱️ %time_remaining%"
+    },
+    {
+      "font": "Consolas",
+      "size": 10,
+      "color": "#ff8000",
+      "data": "%name%"
     },
     {
       "font": "Consolas",
       "size": 8,
-      "color": "#cccccc",
-      "data": "Asset: %quest_data_asset_path%"
+      "color": "#909090",
+      "data": "%description%"
     },
     {
       "font": "Consolas",
-      "size": 4,
+      "size": 8,
       "color": "#ffffff",
-      "data": "____________________________________________________________________________________________________________"
+      "data": "%requirements% %req_data%"
+    },
+    {
+      "font": "Consolas",
+      "size": 8,
+      "color": "#00ff00",
+      "data": "%rewards%"
     }
   ],
   "filter": {
-    "enabled": false,
+    "enabled": true,
     "sectors": {
       "A0": false,
       "Z3": false,
       "B4": false,
       "C2": false
+    },
+    "shops": {
+      "GG": false,
+      "MC": false,
+      "AR": false,
+      "DC": false
     }
   },
   "sort": {
@@ -86,16 +120,38 @@
     ],
     "order": "asc"
   },
+  "display": {
+    "show_name": true,
+    "show_description": true,
+    "show_requirements": true,
+    "show_rewards": true,
+    "show_data": true,
+    "auto_complete": true
+  },
   "shortcuts": {
     "toggle_filter": "ctrl+alt+f",
     "toggle_sector_A0": "ctrl+alt+a",
     "toggle_sector_Z3": "ctrl+alt+z",
     "toggle_sector_B4": "ctrl+alt+b",
     "toggle_sector_C2": "ctrl+alt+c",
-    "sort_order_asc": "ctrl+alt+u",
-    "sort_order_desc": "ctrl+alt+d",
-    "cycle_sort_key": "ctrl+alt+n",
-    "add_sort_key": "ctrl+alt+m",
-    "clear_sort_keys": "ctrl+alt+r"
-  }
+    "toggle_shop_GG": "ctrl+alt+g",
+    "toggle_shop_MC": "ctrl+alt+m",
+    "toggle_shop_AR": "ctrl+alt+r",
+    "toggle_shop_DC": "ctrl+alt+d",
+    "sort_order_asc": "alt+shift+u",
+    "sort_order_desc": "alt+shift+d",
+    "cycle_sort_key": "alt+shift+n",
+    "add_sort_key": "alt+shift+m",
+    "clear_sort_keys": "alt+shift+r",
+    "toggle_display_show_name": "ctrl+alt+1",
+    "toggle_display_show_description": "ctrl+alt+2",
+    "toggle_display_show_requirements": "ctrl+alt+3",
+    "toggle_display_show_rewards": "ctrl+alt+4",
+    "toggle_display_show_data": "ctrl+alt+5",
+    "next_page": "shift+6",
+    "prev_page": "shift+4",
+    "increase_page_size": "shift+2",
+    "decrease_page_size": "shift+8"
+  },
+  "page_size": 4
 }

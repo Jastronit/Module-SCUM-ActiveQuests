@@ -1,15 +1,15 @@
 {
   "Active Quests": {
-    "x": 1509,
+    "x": 1524,
     "y": 0,
-    "w": 428,
-    "h": 962,
-    "bg": "rgba(0,0,0,0.0)",
+    "w": 400,
+    "h": 1080,
+    "bg": "rgba(0,0,0,0)",
     "widgets": [
       "quest"
     ],
     "widget_bgs": {
-      "quest": "rgba(0,0,0,0)"
+      "quest": "rgba(0,0,0,64)"
     },
     "user_visible": true,
     "shortcut": "alt+q"

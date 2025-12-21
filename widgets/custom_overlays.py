@@ -1,7 +1,7 @@
-# custom_overlays2.py
+# custom_overlays.py
 # Widget pre správu vlastných overlayov - (QtBridge shortcuts)
 # Autor: Jastronit (upravené pre QtBridge)
-# Verzia: 4.1
+# Verzia: 4.2 Fix problému s neaktualizovaním Background spinboxov po výberu z listu.
 
 # /////////////////////////////////////////////////////////////////////////////////////////////
 # ////---- Importovanie potrebných knižníc ----////
@@ -126,7 +126,10 @@ def build_overlay_window(name, params, BaseClass, module_name, parent_widget):
                 pass
             bg = params.get("widget_bgs", {}).get(widget_name, "rgba(0,0,0,0)")
             try:
-                w.setStyleSheet(f"background-color: {bg}; border: none;")
+                if hasattr(w, 'set_background') and callable(w.set_background):
+                    w.set_background(bg)
+                else:
+                    w.setStyleSheet(f"background-color: {bg}; border: none;")
             except Exception:
                 pass
             vbox.addWidget(w)
@@ -477,7 +480,7 @@ def create_widget(BaseClass, module_name):
                         rgba = widget_bgs[wname]
                         try:
                             inside = rgba.split("(",1)[1].split(")")[0]
-                            parts = [int(x.strip()) for x in inside.split(",")]
+                            parts = [int(x.strip()) for x in inside.split(",")]  # <-- Späť na int
                             spins = self.widget_bg_spins.get(wname)
                             if spins and len(parts) == 4:
                                 for s,v in zip(spins, parts):
@@ -488,7 +491,7 @@ def create_widget(BaseClass, module_name):
                 if bg:
                     try:
                         inside = bg.split("(",1)[1].split(")")[0]
-                        parts = [int(x.strip()) for x in inside.split(",")]
+                        parts = [int(x.strip()) for x in inside.split(",")]  # <-- Späť na int!
                         if len(parts) == 4:
                             self.spin_r.setValue(parts[0])
                             self.spin_g.setValue(parts[1])
@@ -642,16 +645,24 @@ def create_widget(BaseClass, module_name):
                 try:
                     child = win.findChild(QWidget, widget_name)
                     if child is not None:
-                        child.setStyleSheet(f"background-color: {rgba}; border: none;")
+                        # PRIDAJ TOTO: Skús zavolať set_background ak existuje
+                        if hasattr(child, 'set_background') and callable(child.set_background):
+                            child.set_background(rgba)
+                        else:
+                            child.setStyleSheet(f"background-color: {rgba}; border: none;")
                 except Exception:
                     try:
                         for child in win.findChildren(QWidget):
                             if child.objectName() == widget_name:
-                                child.setStyleSheet(f"background-color: {rgba}; border: none;")
+                                # A TU TIEŽ
+                                if hasattr(child, 'set_background') and callable(child.set_background):
+                                    child.set_background(rgba)
+                                else:
+                                    child.setStyleSheet(f"background-color: {rgba}; border: none;")
                                 break
                     except Exception:
                         pass
-        
+                    
         def update_overlay_bg(self, _val=None):
             if self._suppress_widget_updates:
                 return
@@ -660,11 +671,9 @@ def create_widget(BaseClass, module_name):
             r = int(self.spin_r.value())
             g = int(self.spin_g.value())
             b = int(self.spin_b.value())
-            a = self.spin_a.value()
-            if RGBA_MODE == "int":
-                rgba_str = f"rgba({r},{g},{b},{a})"
-            else:
-                rgba_str = f"rgba({r},{g},{b},{round(a/255.0, 3)})"
+            a = int(self.spin_a.value())
+            rgba_str = f"rgba({r},{g},{b},{a})"  # <-- Vždy int, žiadny RGBA_MODE!
+            
             params = self.custom_overlays.get(self.selected_overlay)
             if params is None:
                 params = get_default_overlay_params()
@@ -688,17 +697,11 @@ def create_widget(BaseClass, module_name):
                     try:
                         root.setStyleSheet(f"background-color: {rgba_str}; border: none;")
                     except Exception:
-                        try:
-                            root.setStyleSheet(f"background-color: {rgba_str}; border: none;")
-                        except Exception:
-                            pass
+                        pass
                 try:
                     win.setStyleSheet(f"background-color: {rgba_str}; border: none;")
                 except Exception:
-                    try:
-                        win.setStyleSheet(f"background-color: {rgba_str}; border: none;")
-                    except Exception:
-                        pass
+                    pass
 
         def handle_overlay_shortcut(self, overlay_widget, params, combo):
             # kept for backwards compatibility if other code calls directly

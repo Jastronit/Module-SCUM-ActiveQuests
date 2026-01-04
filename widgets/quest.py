@@ -1,6 +1,6 @@
 # quest_widget_qtextbrowser.py
-# PAGINATION VERSION: Fixed - proper pagination without dynamic sizing
-# Author: Assistant
+# FINÁLNA VERZIA - completion_text fix + farby + shared translate_data
+# Zmeny označené: 🔧 FIX alebo 🆕 NOVÉ
 
 import os
 import json
@@ -84,9 +84,12 @@ def load_translations(widget):
     except Exception:
         return {}
 
-
 def merge_quest_texts(widget, combined, language="en"):
-    quest_id = combined.get("quest_data_asset_path")
+    quest_id = None
+    for candidate in ("quest_data_asset_path", "translate_key", "quest_key", "id"):
+        if isinstance(combined, dict) and combined.get(candidate):
+            quest_id = combined.get(candidate)
+            break
     if not quest_id:
         return {}
 
@@ -129,13 +132,26 @@ def merge_quest_texts(widget, combined, language="en"):
         elif isinstance(entry.get("requirements"), str):
             result["requirements"] = entry.get("requirements")
 
+        for k, v in entry.items():
+            if isinstance(k, str) and k.startswith("requirements_"):
+                if isinstance(v, dict):
+                    result[k] = v.get(language, "")
+                else:
+                    result[k] = v
+
         if isinstance(entry.get("rewards"), dict):
             result["rewards"] = entry["rewards"].get(language, "")
         elif isinstance(entry.get("rewards"), str):
             result["rewards"] = entry.get("rewards")
 
         if isinstance(entry.get("translate_data"), dict):
-            result["req_data"] = entry.get("translate_data")
+            td = entry.get("translate_data")
+            result["req_data"] = td
+            for inner_k, inner_v in td.items():
+                if inner_k == "completion_text":
+                    result["completion_text"] = inner_v
+                    continue
+                result[inner_k] = inner_v
 
     return result
 
@@ -161,6 +177,187 @@ def apply_translation(quest, translations, language="en"):
 
     return quest
 
+# ============================================================================
+# Smart Binary Data Parser
+# ============================================================================
+
+def parse_smart_translate_key(hex_data: str, translate_key: str, flat: dict) -> str:
+    """
+    Parsuje špeciálne translate kľúče typu:
+    "type1:0,1,8,9": "template|completion_suffix"
+    """
+    try:
+        if ":" not in translate_key:
+            return None
+        
+        parser_type, positions = translate_key.split(":", 1)
+        
+        if parser_type != "type1":
+            return None
+        
+        pos_parts = positions.split(",")
+        if len(pos_parts) != 4:
+            return None
+        
+        complete_pos = [int(pos_parts[0]), int(pos_parts[1])]
+        required_pos = [int(pos_parts[2]), int(pos_parts[3])]
+        
+        if not hex_data or len(hex_data) % 2 != 0:
+            return None
+        
+        bytes_data = bytes.fromhex(hex_data)
+        
+        if complete_pos[1] >= len(bytes_data):
+            return None
+        complete_bytes = bytes_data[complete_pos[0]:complete_pos[1]+1]
+        complete = int.from_bytes(complete_bytes, byteorder='little')
+        
+        if required_pos[1] >= len(bytes_data):
+            return None
+        required_bytes = bytes_data[required_pos[0]:required_pos[1]+1]
+        required = int.from_bytes(required_bytes, byteorder='little')
+        
+        return {
+            "complete": complete,
+            "required": required,
+            "is_complete": complete >= required
+        }
+        
+    except Exception as e:
+        print(f"[SmartParser] Error parsing {translate_key}: {e}")
+        return None
+
+
+def apply_smart_template(template: str, parsed_data: dict, flat: dict) -> str:
+    """
+    Aplikuje šablónu s inteligentnými tokenmi.
+    """
+    parts = template.split(" ## ", 1)
+    incomplete_template = parts[0]
+    complete_suffix = parts[1] if len(parts) > 1 else ""
+    
+    if parsed_data["is_complete"] and complete_suffix:
+        result = complete_suffix
+    else:
+        result = incomplete_template
+    
+    result = result.replace("%complete%", str(parsed_data["complete"]))
+    result = result.replace("%required%", str(parsed_data["required"]))
+    
+    for key, val in flat.items():
+        token = f"%{key}%"
+        if token in result:
+            result = result.replace(token, str(val) if val is not None else "")
+    
+    return result
+
+# ============================================================================
+# 🔧 FIX: MULTI-ITEM QUEST SUPPORT - pridaný fallback na hlavný translate_data
+# ============================================================================
+
+def check_all_requirements_complete(quest_data_list: list, flat: dict) -> bool:
+    """
+    Skontroluje či sú všetky requirements splnené.
+    🆕 NOVÉ: Podporuje fallback na hlavný translate_data ak neexistujú translate_data_X
+    """
+    if not isinstance(quest_data_list, list) or not quest_data_list:
+        return False
+    
+    for idx, hex_data in enumerate(quest_data_list):
+        key = f"translate_data_{idx + 1}"
+        
+        # 🆕 FALLBACK: Ak neexistuje translate_data_X, skús hlavný translate_data
+        if key not in flat:
+            if "translate_data" in flat and isinstance(flat["translate_data"], dict):
+                translate_data = flat["translate_data"]
+            else:
+                return False
+        else:
+            translate_data = flat[key]
+        
+        if not isinstance(translate_data, dict):
+            continue
+        
+        is_complete = False
+        for translate_key, translate_template in translate_data.items():
+            if translate_key.startswith("type1:"):
+                parsed = parse_smart_translate_key(hex_data, translate_key, flat)
+                if parsed and parsed.get("is_complete", False):
+                    is_complete = True
+                    break
+        
+        if not is_complete:
+            return False
+    
+    return True
+
+
+def process_multi_item_quest(quest_data_list: list, flat: dict) -> str:
+    """
+    Spracuje quest s viacerými tracking items.
+    """
+    result_parts = []
+    
+    for idx, hex_data in enumerate(quest_data_list):
+        req_key = f"requirements_{idx + 1}"
+        data_key = f"translate_data_{idx + 1}"
+        
+        requirement_text = flat.get(req_key, "")
+        
+        if data_key not in flat:
+            if requirement_text:
+                result_parts.append(f"{requirement_text}: {hex_data}")
+            continue
+        
+        translate_data = flat[data_key]
+        if not isinstance(translate_data, dict):
+            continue
+        
+        matched_value = None
+        for translate_key, translate_template in translate_data.items():
+            if translate_key.startswith("type1:"):
+                parsed = parse_smart_translate_key(hex_data, translate_key, flat)
+                if parsed:
+                    matched_value = apply_smart_template(translate_template, parsed, flat)
+                    break
+        
+        if matched_value is None and hex_data in translate_data:
+            matched_value = translate_data[hex_data]
+        
+        if matched_value is None and hex_data:
+            for tk in translate_data.keys():
+                if not tk.startswith("type1:") and hex_data.startswith(tk):
+                    matched_value = translate_data[tk]
+                    break
+        
+        if requirement_text:
+            item_result = f"{requirement_text}: {matched_value if matched_value else hex_data}"
+        else:
+            item_result = matched_value if matched_value else hex_data
+        
+        result_parts.append(item_result)
+    
+    result = "<br>".join(result_parts)
+    flat["requirements"] = ""
+    
+    return result
+
+
+# ============================================================================
+# 🔧 OPRAVA: completion_text s vnorénymi tokenmi a dvoma režimami farieb
+# ============================================================================
+
+# REŽIM 1: token_colors["completion_text"] JE nastavená
+# → Celý completion_text má túto farbu (vrátane vnorených tokenov)
+# Príklad: "TURN IN TO C1 ARMORER" → celé zelené
+
+# REŽIM 2: token_colors["completion_text"] NIE JE nastavená
+# → completion_text má line_color, ale vnorené tokeny majú svoje farby
+# Príklad: "TURN IN TO C1 ARMORER" → "TURN IN TO" (biela) "C1" (žltá) "ARMORER" (biela)
+
+# ============================================================================
+# NÁJDI replace_tokens_html_simple() A UPRAV SPRACOVANIE TOKENOV:
+# ============================================================================
 
 def replace_tokens_html_simple(template: str, combined: dict, globals_dict: dict, cfg: dict, remaining=None, line_color=None):
     token_colors = cfg.get("token_colors", {}) if isinstance(cfg, dict) else {}
@@ -175,11 +372,17 @@ def replace_tokens_html_simple(template: str, combined: dict, globals_dict: dict
         flat.update(combined)
 
     widget_instance = cfg.get("widget_instance") if isinstance(cfg, dict) else None
-    if widget_instance and "quest_data_asset_path" in flat:
+    candidate_keys = ("quest_data_asset_path", "translate_key", "quest_key", "id")
+    if widget_instance and any(k in flat for k in candidate_keys):
         try:
             quest_texts = {}
             if hasattr(widget_instance, "get_quest_texts"):
-                quest_texts = widget_instance.get_quest_texts(flat.get("quest_data_asset_path"), language=cfg.get("language", "en")) or {}
+                qid = None
+                for k in candidate_keys:
+                    if flat.get(k):
+                        qid = flat.get(k)
+                        break
+                quest_texts = widget_instance.get_quest_texts(qid, language=cfg.get("language", "en")) or {}
             else:
                 quest_texts = merge_quest_texts(widget_instance, flat, language=cfg.get("language", "en"))
             if isinstance(quest_texts, dict):
@@ -195,26 +398,105 @@ def replace_tokens_html_simple(template: str, combined: dict, globals_dict: dict
     for key, val in list(flat.items()):
         token = f"%{key}%"
         if token in out:
+            # 🆕 ŠPECIÁLNE SPRACOVANIE PRE completion_text
+            if key == "completion_text" and isinstance(val, str):
+                completion_token_color = token_colors.get("completion_text")
+                
+                if completion_token_color:
+                    # 🎨 REŽIM 1: Celý text jednou farbou (token_colors["completion_text"])
+                    # Najprv nahraď všetky vnorené tokeny (bez ich farieb)
+                    processed = val
+                    for sub_key, sub_val in flat.items():
+                        token2 = f"%{sub_key}%"
+                        if token2 in processed:
+                            sub_val_str = str(sub_val) if sub_val is not None else ""
+                            processed = processed.replace(token2, sub_val_str)
+                    
+                    safe = html.escape(processed)
+                    safe = safe.replace("&lt;br&gt;", "<br>")
+                    # Celý text má farbu z token_colors
+                    safe = f"<span style=\"color:{completion_token_color};\">{safe}</span>"
+                    out = out.replace(token, safe)
+                    continue
+                
+                else:
+                    # 🎨 REŽIM 2: Vnorené tokeny majú svoje farby, zvyšok má line_color
+                    # Rozdeľ text na časti a identifikuj tokeny
+                    import re
+                    
+                    # Najprv escapuj celý text
+                    safe_text = html.escape(val)
+                    
+                    # Nájdi všetky tokeny vo forme %xxx%
+                    token_pattern = r'%([a-zA-Z_][a-zA-Z0-9_]*)%'
+                    
+                    def replace_nested_token(match):
+                        token_name = match.group(1)
+                        token_value = flat.get(token_name, match.group(0))
+                        
+                        if token_value == match.group(0):
+                            # Token nebol nájdený, nechaj ho tak
+                            return html.escape(match.group(0))
+                        
+                        # Získaj hodnotu a escapuj ju
+                        token_value_str = str(token_value) if token_value is not None else ""
+                        safe_value = html.escape(token_value_str)
+                        
+                        # Aplikuj farbu tokenu ak existuje
+                        sub_color = token_colors.get(token_name)
+                        if sub_color:
+                            return f"<span style=\"color:{sub_color};\">{safe_value}</span>"
+                        else:
+                            return safe_value
+                    
+                    # Nahraď všetky vnorené tokeny
+                    result = re.sub(token_pattern, replace_nested_token, val)
+                    
+                    # Escapuj HTML značky (ale nie naše span tagy)
+                    # Už máme escapované cez replace_nested_token
+                    safe = result.replace("<br>", "<br>")  # Zachovaj <br>
+                    
+                    out = out.replace(token, safe)
+                    continue
+            
+            # ŠTANDARDNÉ SPRACOVANIE PRE req_data
             if key == "req_data" and isinstance(val, dict):
-                quest_data_key = flat.get("data", "")
+                quest_data = flat.get("data")
                 
-                matched_value = None
-                
-                if quest_data_key in val:
-                    matched_value = val[quest_data_key]
-                
-                if matched_value is None and quest_data_key:
-                    best_match_key = None
-                    best_match_length = 0
+                if isinstance(quest_data, list):
+                    matched_value = process_multi_item_quest(quest_data, flat)
+                else:
+                    quest_data_key = quest_data if isinstance(quest_data, str) else ""
+                    matched_value = None
                     
-                    for translate_key in val.keys():
-                        if quest_data_key.startswith(translate_key):
-                            if len(translate_key) > best_match_length:
-                                best_match_key = translate_key
-                                best_match_length = len(translate_key)
+                    for translate_key, translate_template in val.items():
+                        if translate_key.startswith("type1:"):
+                            parsed = parse_smart_translate_key(quest_data_key, translate_key, flat)
+                            if parsed:
+                                matched_value = apply_smart_template(translate_template, parsed, flat)
+                                break
                     
-                    if best_match_key:
-                        matched_value = val[best_match_key]
+                    if matched_value is None and quest_data_key in val:
+                        matched_value = val[quest_data_key]
+                    
+                    if matched_value is None and quest_data_key:
+                        best_match_key = None
+                        best_match_length = 0
+                        
+                        for translate_key in val.keys():
+                            if translate_key.startswith("type1:"):
+                                continue
+                            
+                            if quest_data_key.startswith(translate_key):
+                                if len(translate_key) > best_match_length:
+                                    best_match_key = translate_key
+                                    best_match_length = len(translate_key)
+                        
+                        if best_match_key:
+                            matched_value = val[best_match_key]
+                    
+                    if matched_value is None:
+                        matched_value = quest_data_key if quest_data_key else ""
                 
                 if matched_value:
                     val = matched_value
@@ -224,14 +506,16 @@ def replace_tokens_html_simple(template: str, combined: dict, globals_dict: dict
                             if token2 in val:
                                 val = val.replace(token2, str(sub_val))
                 else:
-                    val = quest_data_key if quest_data_key else ""
+                    val = ""
             
+            # ŠTANDARDNÉ SPRACOVANIE PRE rewards a requirements
             elif key in ["rewards", "requirements"] and isinstance(val, str):
                 for sub_key, sub_val in flat.items():
                     token2 = f"%{sub_key}%"
                     if token2 in val:
                         val = val.replace(token2, str(sub_val))
 
+            # ŠTANDARDNÉ SPRACOVANIE PRE OSTATNÉ TOKENY
             raw_val = "" if val is None else str(val)
             safe = html.escape(raw_val)
             safe = safe.replace("&lt;br&gt;", "<br>")
@@ -314,7 +598,6 @@ def create_widget(BaseClass, module_name):
             self.text_browser.setReadOnly(True)
             self.text_browser.setOpenExternalLinks(False)
             self.text_browser.setStyleSheet("background: transparent; border: none; padding: 6px;")
-            # Dynamic sizing - shrinks to content size (like original)
             self.text_browser.setSizePolicy(QSizePolicy.Preferred, QSizePolicy.Minimum)
             self.text_browser.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
             self.text_browser.setMinimumHeight(0)
@@ -322,20 +605,16 @@ def create_widget(BaseClass, module_name):
             main_layout.addWidget(self.text_browser)
             self.setLayout(main_layout)
 
-            # Paths
             self._config_path = self.get_config_path("quest.json")
             self._data_path = self.get_data_path("quest.json")
 
-            # State
             self._last_config_mtime = None
             self._last_data_mtime = None
             self._config = DEFAULT_CONFIG.copy()
 
-            # OPTIMIZATION: Cache translations at startup
             self._translations_cache = None
             self._translations_mtime = None
 
-            # Load user config
             self._ensure_config()
             user_cfg = read_json_safe(self._config_path, {}) or {}
             if isinstance(user_cfg, dict):
@@ -344,7 +623,6 @@ def create_widget(BaseClass, module_name):
             self._config.setdefault("filter", DEFAULT_CONFIG["filter"].copy())
             self._config.setdefault("sort", DEFAULT_CONFIG["sort"].copy())
 
-            # Pagination state - load from config
             self._page_size = self._config.get("page_size", 10)
             self._current_page = 0
 
@@ -458,7 +736,6 @@ def create_widget(BaseClass, module_name):
             self._config.setdefault("filter", DEFAULT_CONFIG["filter"].copy())
             self._config.setdefault("sort", DEFAULT_CONFIG["sort"].copy())
             
-            # Update page size if changed in config
             self._page_size = self._config.get("page_size", 10)
             
             self._load_active_sectors_from_config()
@@ -716,6 +993,9 @@ def create_widget(BaseClass, module_name):
             except Exception:
                 return quests
 
+        # ============================================================================
+        # 🔧 FIX: _generate_full_html() - PRIDANÉ completion_text pre single-item + farby
+        # ============================================================================
         def _generate_full_html(self, quests, current_ts):
             cfg = self._config
             header_cfg = cfg.get("header", [])
@@ -778,21 +1058,102 @@ def create_widget(BaseClass, module_name):
                 q_copy["time_remaining"] = format_time_remaining(remaining, cfg.get("time_remaining_format", "%dd %hh %mm %ss"))
                 q_copy["time_remaining_seconds"] = remaining
 
+                # Merge translation texts
+                try:
+                    translations_for_q = {}
+                    if hasattr(self, "get_quest_texts"):
+                        translations_for_q = self.get_quest_texts(q_copy.get("quest_data_asset_path") or q_copy.get("quest_key") or q_copy.get("id"), language=cfg.get("language", "en")) or {}
+                    else:
+                        translations_for_q = merge_quest_texts(self, q_copy, language=cfg.get("language", "en")) or {}
+                    if isinstance(translations_for_q, dict):
+                        for tk, tv in translations_for_q.items():
+                            if tk not in q_copy or not q_copy.get(tk):
+                                q_copy[tk] = tv
+                except Exception:
+                    pass
+
                 parts.append("<div style='padding:4px 0;'>")
+                
+                # 🆕 KROK 1: ZISTI ČI JE QUEST DOKONČENÝ (PRED renderovaním lines)
+                quest_is_complete = False
+                
+                # Detekcia pre MULTI-ITEM quest
+                if isinstance(q_copy.get("data"), list):
+                    try:
+                        if check_all_requirements_complete(q_copy.get("data", []), q_copy):
+                            quest_is_complete = True
+                    except Exception:
+                        pass
+                
+                # Detekcia pre SINGLE-ITEM quest
+                else:
+                    try:
+                        quest_data_str = q_copy.get("data") if isinstance(q_copy.get("data"), str) else ""
+                        req_data = q_copy.get("req_data") if isinstance(q_copy.get("req_data"), dict) else {}
+                        
+                        for translate_key in req_data.keys():
+                            if translate_key.startswith("type1:"):
+                                parsed = parse_smart_translate_key(quest_data_str, translate_key, q_copy)
+                                if parsed and parsed.get("is_complete", False):
+                                    quest_is_complete = True
+                                    break
+                    except Exception:
+                        pass
+                
+                # 🆕 KROK 2: Pridaj quest_is_complete do q_copy aby bol dostupný v tokenoch
+                q_copy["quest_is_complete"] = quest_is_complete
+                
+                # Renderovanie riadkov
                 for line in lines_cfg:
                     raw = line.get("data", "")
+                    line_color = line.get("color")
 
+                    # 🆕 KROK 3: Ak riadok obsahuje %completion_text%, zobraz ho LEN ak je quest dokončený
+                    if "%completion_text%" in raw:
+                        if not quest_is_complete:
+                            continue  # Preskoč tento riadok ak quest NIE JE dokončený
+
+                    # Display checks pre ostatné tokeny
                     if ("%name%" in raw and not display_cfg.get("show_name", True)) or \
-                       ("%description%" in raw and not display_cfg.get("show_description", True)) or \
-                       ("%requirements%" in raw and not display_cfg.get("show_requirements", True)) or \
-                       ("%rewards%" in raw and not display_cfg.get("show_rewards", True)) or \
-                       ("%data%" in raw and not display_cfg.get("show_data", True)):
+                    ("%description%" in raw and not display_cfg.get("show_description", True)) or \
+                    ("%requirements%" in raw and not display_cfg.get("show_requirements", True)) or \
+                    ("%rewards%" in raw and not display_cfg.get("show_rewards", True)) or \
+                    ("%data%" in raw and not display_cfg.get("show_data", True)):
                         continue
 
-                    html_line = replace_tokens_html_simple(raw, q_copy, globals_dict, cfg, remaining=remaining, line_color=line.get("color"))
-                    style = f"font-family:{line.get('font', base_font)}; font-size:{line.get('size', base_size)}pt; color:{line.get('color','#ffffff')};"
-                    parts.append(f"<div style='{style} margin:1px 0;'>{html_line}</div>")
+                    # MULTI-ITEM QUEST
+                    if isinstance(q_copy.get("data"), list) and any(tok in raw for tok in ("%data%", "%req_data%", "%requirements%", "%translate_data%")):
+                        for idx_item, item_hex in enumerate(q_copy.get("data")):
+                            per_item = dict(q_copy)
+                            per_item["data"] = item_hex
+                            try:
+                                td_key = f"translate_data_{idx_item + 1}"
+                                req_key = f"requirements_{idx_item + 1}"
+                                
+                                if td_key in per_item and isinstance(per_item[td_key], dict):
+                                    per_item["req_data"] = per_item[td_key]
+                                elif "translate_data" in per_item and isinstance(per_item["translate_data"], dict):
+                                    per_item["req_data"] = per_item["translate_data"]
+                                else:
+                                    rd = per_item.get("req_data")
+                                    if isinstance(rd, dict) and td_key in rd and isinstance(rd[td_key], dict):
+                                        per_item["req_data"] = rd[td_key]
 
+                                if req_key in per_item:
+                                    per_item["requirements"] = per_item.get(req_key) or per_item.get("requirements", "")
+                            except Exception:
+                                pass
+
+                            html_line = replace_tokens_html_simple(raw, per_item, globals_dict, cfg, remaining=remaining, line_color=line_color)
+                            style = f"font-family:{line.get('font', base_font)}; font-size:{line.get('size', base_size)}pt; color:{line.get('color','#ffffff')};"
+                            parts.append(f"<div style='{style} margin:1px 0;'>{html_line}</div>")
+                    
+                    # SINGLE-ITEM QUEST alebo riadok s completion_text
+                    else:
+                        html_line = replace_tokens_html_simple(raw, q_copy, globals_dict, cfg, remaining=remaining, line_color=line_color)
+                        style = f"font-family:{line.get('font', base_font)}; font-size:{line.get('size', base_size)}pt; color:{line.get('color','#ffffff')};"
+                        parts.append(f"<div style='{style} margin:1px 0;'>{html_line}</div>")
+                
                 parts.append("</div>")
                 parts.append("<hr style='border: none; border-top: 1px solid rgba(255,255,255,0.03); margin:6px 0;'/>")
 
@@ -830,14 +1191,13 @@ def create_widget(BaseClass, module_name):
                     self.text_browser.setHtml(html_out)
                     self._last_html = html_out
                     
-                    # Dynamic height adjustment - shrink to content
+                    # Dynamic height adjustment
                     try:
                         QApplication.processEvents()
                         
                         doc = self.text_browser.document()
                         doc_height = int(doc.size().height())
                         
-                        # Set height to content size (max = parent overlay height)
                         parent_height = self.parent().height() if self.parent() else 1000
                         optimal_height = min(doc_height + 20, parent_height)
                         

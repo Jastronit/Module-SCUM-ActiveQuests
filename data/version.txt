@@ -45,3 +45,13 @@ Added the ability to switch between quest pages using shortcuts and to adjust th
 Added the Files widget.
 Removed the Settings widget (temporarily fully replaced by the Files widget).
 Fixed a bug in the Custom Overlays widget where spin boxes for the overall overlay background were not updating after selecting an overlay window from the list.
+
+[2.1] Beta
+[Logic]
+Extracted all binary data for every item involved in a quest (previously only the first item was being extracted).
+
+[Other]
+Changed the way data is displayed, with support for repeating formatting based on the defined format when a quest requires multiple item types or tasks.
+Improved the data translation system — it now only needs a single line to fully translate, with support for required randomly generated amounts and overflow handling for quests that require killing a certain number of puppets.
+Added a feature to check whether all requirements have been met, and if so, allows custom text formatting with two color modes.
+Reworked additional quests.

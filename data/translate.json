@@ -11,10 +11,8 @@
         "en": "Find 12 Gauge Ammobox"
       },
       "translate_data": {
-        "01000000000000000000000003000000": "0/3",
-        "01000000000000000100000003000000": "1/3",
-        "01000000000000000200000003000000": "2/3",
-        "01000000000000000300000003000000": "3/3 ✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$1,300 and 5FP"
@@ -31,10 +29,8 @@
         "en": "Find .22 Ammobox"
       },
       "translate_data": {
-        "01000000000000000000000003000000": "0/3",
-        "01000000000000000100000003000000": "1/3",
-        "01000000000000000200000003000000": "2/3",
-        "01000000000000000300000003000000": "3/3 ✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$700 and 5FP"
@@ -42,19 +38,20 @@
     },
     "QuestSetup:T1_AR_Fetch_357Ammobox": {
       "name": {
-        "": ""
+        "en": ".357 Ammobox"
       },
       "description": {
-        "": ""
+        "en": ".357 ammoboxes are out of stock. Shame. I'll give you something if you change that."
       },
       "requirements": {
-        "": ""
+        "en": "Find .357 Ammobox"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "": ""
+        "en": "$1,500 and 5FP"
       }
     },
     "QuestSetup:T1_AR_Fetch_38Ammobox": {
@@ -68,10 +65,8 @@
         "en": "Find .38 Ammobox"
       },
       "translate_data": {
-        "01000000000000000000000003000000": "0/3",
-        "01000000000000000100000003000000": "1/3",
-        "01000000000000000200000003000000": "2/3",
-        "01000000000000000300000003000000": "3/3 ✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$1,350 and 5FP"
@@ -79,19 +74,20 @@
     },
     "QuestSetup:T1_AR_Fetch_44Ammobox": {
       "name": {
-        "": ""
+        "en": ".44 Ammobox"
       },
       "description": {
-        "": ""
+        "en": ".44 ammoboxes are out of stock, and I really like .44 ammoboxes. I need some more."
       },
       "requirements": {
-        "": ""
+        "en": "Find .44 Ammobox"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "": ""
+        "en": "$1,800 and 0FP"
       }
     },
     "QuestSetup:T1_AR_Fetch_45ACPAmmobox": {
@@ -105,10 +101,8 @@
         "en": "Find 45 ACP Ammobox"
       },
       "translate_data": {
-        "01000000000000000000000003000000": "0/3",
-        "01000000000000000100000003000000": "1/3",
-        "01000000000000000200000003000000": "2/3",
-        "01000000000000000300000003000000": "3/3 ✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$2,600 and 5FP"
@@ -125,10 +119,8 @@
         "en": "Find 50 AE Ammobox"
       },
       "translate_data": {
-        "01000000000000000000000003000000": "0/3",
-        "01000000000000000100000003000000": "1/3",
-        "01000000000000000200000003000000": "2/3",
-        "01000000000000000300000003000000": "3/3 ✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$3,000 and 5FP"
@@ -145,13 +137,11 @@
         "en": "Find 9mm Ammobox"
       },
       "translate_data": {
-        "01000000000000000000000003000000": "0/3",
-        "01000000000000000100000003000000": "1/3",
-        "01000000000000000200000003000000": "2/3",
-        "01000000000000000300000003000000": "3/3 ✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "": ""
+        "en": "$1,500 and 5FP"
       }
     },
     "QuestSetup:T1_AR_Fetch_9x39Ammobox": {
@@ -165,10 +155,8 @@
         "en": "Find 9x39mm Ammobox"
       },
       "translate_data": {
-        "01000000000000000000000003000000": "0/3",
-        "01000000000000000100000003000000": "1/3",
-        "01000000000000000200000003000000": "2/3",
-        "01000000000000000300000003000000": "3/3 ✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$3,000 and 5FP"
@@ -185,8 +173,8 @@
         "en": "Find Block 21 Pistol"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$800 and 5FP"
@@ -203,8 +191,8 @@
         "en": "Find M9 Pistol"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$800 and 5FP"
@@ -221,8 +209,8 @@
         "en": "Find M9 Flashlight"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$600 and 5FP"
@@ -239,17 +227,8 @@
         "en": "Kill puppets with blunt tools"
       },
       "translate_data": {
-        "0000000007000000": "0/7",
-        "0100000007000000": "1/7",
-        "0200000007000000": "2/7",
-        "0300000007000000": "3/7",
-        "0400000007000000": "4/7",
-        "0500000007000000": "5/7",
-        "0600000007000000": "6/7",
-        "0700000007000000": "7/7 ✅️<br>TURN IN TO %sector ARMORER",
-        "0800000007000000": "8/7 ✅️<br>TURN IN TO %sector ARMORER",
-        "0900000007000000": "9/7 ✅️<br>TURN IN TO %sector ARMORER",
-        "0a00000007000000": "10/7 ✅️<br>TURN IN TO %sector ARMORER"
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$1,500 and 5FP"
@@ -266,14 +245,8 @@
         "en": "Kill puppets with bow 🏹️"
       },
       "translate_data": {
-        "0000000007000000": "0/7",
-        "0100000007000000": "1/7",
-        "0200000007000000": "2/7",
-        "0300000007000000": "3/7",
-        "0400000007000000": "4/7",
-        "0500000007000000": "5/7",
-        "0600000007000000": "6/7",
-        "0700000007000000": "7/7 ✅️<br>TURN IN TO %sector ARMORER"
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$1,500 and 5FP"
@@ -290,14 +263,8 @@
         "en": "Kill puppets with sharp tools"
       },
       "translate_data": {
-        "0000000007000000": "0/7",
-        "0100000007000000": "1/7",
-        "0200000007000000": "2/7",
-        "0300000007000000": "3/7",
-        "0400000007000000": "4/7",
-        "0500000007000000": "5/7",
-        "0600000007000000": "6/7",
-        "0700000007000000": "7/7 ✅️<br>TURN IN TO %sector ARMORER"
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$1,500 and 5FP"
@@ -314,8 +281,8 @@
         "en": "Find a AK-47"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$4,500 and 10FP<br>C2 Trader's Shop Discounts:<br>1x Compound Bow at $1,000 and 0FP<br>24x Broadhead Carbon Arrow at $20 and 0FP<br>1x Military Quiver at $4,000 and 0FP"
@@ -323,19 +290,20 @@
     },
     "QuestSetup:T2_AR_Fetch_AK47Rail": {
       "name": {
-        "": ""
+        "en": "RIS Adapters"
       },
       "description": {
-        "": ""
+        "en": "A rifle by itself is good, but if you add a scope it's even better. For that purpose, I need to sell rails in my shop, and a RIS Adapter will do wonders. I've always dreamed about being rich."
       },
       "requirements": {
-        "": ""
+        "en": "Find a RIS Adapter"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "": ""
+        "en": "$1,200 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Red Dot Sight at $1,200 and 0FP"
       }
     },
     "QuestSetup:T2_AR_Fetch_AKM": {
@@ -349,8 +317,8 @@
         "en": "Find a AKM"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$2,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>3x VHS Magazine at $800<br>3x AK15 Magazine at $400<br>3x AK47 Magazine at $500"
@@ -367,7 +335,8 @@
         "": ""
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "": ""
@@ -375,36 +344,38 @@
     },
     "QuestSetup:T2_AR_Fetch_Kar98k": {
       "name": {
-        "": ""
+        "en": "Blue Pill Bolt Action"
       },
       "description": {
-        "": ""
+        "en": "When you don't want to get close to your prey, a Kar98 is a nice option. Unfortunately for me, it's a bit old so you can't find one just anywhere. A reward is waiting for anyone who brings one to me."
       },
       "requirements": {
-        "": ""
+        "en": "Find a Kar98"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "": ""
+        "en": "$3,700 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Weapon Ghillie at $1,800 and 0FP"
       }
     },
     "QuestSetup:T2_AR_Fetch_M249": {
       "name": {
-        "": ""
+        "en": "Horde Mower 9000"
       },
       "description": {
-        "": ""
+        "en": "When someone needs to mow down a horde, they buy an M249. As there are no left in the shop, the number of hordes around the outpost is making me uncomfortable. The reward is ready for anyone who brings me a fresh suply."
       },
       "requirements": {
-        "": ""
+        "en": "Find an M249"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "": ""
+        "en": "$4,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x VHS 2 at $8,000 and 0FP"
       }
     },
     "QuestSetup:T2_AR_Fetch_M82Scope": {
@@ -418,8 +389,8 @@
         "en": "Find a M82 Scope"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$2,500 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x ACOG at $1,700 and 0FP"
@@ -436,8 +407,8 @@
         "en": "Find a Mosin Nagant"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$3,500 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Ghillie Suit Top at $2,000 and 0FP<br>1x Ghillie Suit Bottom at $2,000 and 0FP"
@@ -454,8 +425,8 @@
         "en": "Find Night Vision Goggles"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$2,150 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Bushman at $1,200 and 0FP"
@@ -472,7 +443,8 @@
         "": ""
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "": ""
@@ -480,19 +452,20 @@
     },
     "QuestSetup:T2_AR_Fetch_ScopeM1": {
       "name": {
-        "": ""
+        "en": "M1 Scopes"
       },
       "description": {
-        "": ""
+        "en": "Some of my customers keep returning the M1 Garand saying the cant't hit anything. Most of them also had blue thums. I gave them a discount on M1 Scopes, so now I don't have any left."
       },
       "requirements": {
-        "": ""
+        "en": "Find a M1 Scope"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "": ""
+        "en": "$1,800 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x V3 Holographic Sight at $1,200 and 0FP"
       }
     },
     "QuestSetup:T2_AR_Fetch_WeaponCleaningKit": {
@@ -503,12 +476,11 @@
         "en": "The shop can't be picky about what guns to buy, so I have to clean all of them. It's about time that people learn to clean their weapons."
       },
       "requirements": {
-        "en": "Find a Eapon Cleaning Kit"
+        "en": "Find a Weapon Cleaning Kit"
       },
       "translate_data": {
-        "01000000000000000000000002000000": "0/2",
-        "01000000000000000100000002000000": "1/2",
-        "01000000000000000200000002000000": "2/2 ✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$1,700 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x AK15 Suppressor at $1,800 and 0FP"
@@ -521,14 +493,18 @@
       "description": {
         "en": "Every police station has a bunch of surveillance cameras and some satellites on the roofs. I need someone to pull a wire or two so we'll know for sure TEC1 cant't use those against the good people that are my customers."
       },
-      "requirements": {
-        "en": "Disable Satellite 3<br>Erase data from cameras 7"
+      "requirements_1": {
+        "en": "Disable Satellite"
+      },
+      "requirements_2": {
+        "en": "Erase data from cameras"
       },
       "translate_data": {
-        "": ""
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$3,000 and 10FP<br>B4 Trader's Shop Discounts:<br>1x Handgun Suppressor at $1,000 and 30FP"
+        "en": "$3,000 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Handgun Suppressor at $1,000 and 30FP"
       }
     },
     "QuestSetup:T2_AR_Kill_Puppets": {
@@ -542,32 +518,8 @@
         "en": "Kill puppets"
       },
       "translate_data": {
-        "0000000019000000": "0/25",
-        "0100000019000000": "1/25",
-        "0200000019000000": "2/25",
-        "0300000019000000": "3/25",
-        "0400000019000000": "4/25",
-        "0500000019000000": "5/25",
-        "0600000019000000": "6/25",
-        "0700000019000000": "7/25",
-        "0800000019000000": "8/25",
-        "0900000019000000": "9/25",
-        "0a00000019000000": "10/25",
-        "0b00000019000000": "11/25",
-        "0c00000019000000": "12/25",
-        "0d00000019000000": "13/25",
-        "0e00000019000000": "14/25",
-        "0f00000019000000": "15/25",
-        "1000000019000000": "16/25",
-        "1100000019000000": "17/25",
-        "1200000019000000": "18/25",
-        "1300000019000000": "19/25",
-        "1400000019000000": "20/25",
-        "1500000019000000": "21/25",
-        "1600000019000000": "22/25",
-        "1700000019000000": "23/25",
-        "1800000019000000": "24/25",
-        "2600000019000000": "25/25 ✅️<br>TURN IN TO %sector% ARMORER"
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
         "en": "$2,500 and 15FP"
@@ -958,8 +910,8 @@
         "en": "Find Activated Charcoal - Blister"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% DOCTOR"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$600 and 5FP"
@@ -976,8 +928,8 @@
         "en": "Find Antibiotics - Blister"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% DOCTOR"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$600 and 5FP"
@@ -994,12 +946,8 @@
         "en": "Find Disposable Mask"
       },
       "translate_data": {
-        "01000000000000000000000005000000": "0/5",
-        "01000000000000000100000005000000": "1/5",
-        "01000000000000000200000005000000": "2/5",
-        "01000000000000000300000005000000": "3/5",
-        "01000000000000000400000005000000": "4/5",
-        "01000000000000000500000005000000": "5/5 ✅️<br>TURN IN TO %sector% DOCTOR"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$500 and 5FP"
@@ -1016,10 +964,8 @@
         "en": "Find Emergency Bandage"
       },
       "translate_data": {
-        "01000000000000000000000003000000": "0/3",
-        "01000000000000000100000003000000": "1/3",
-        "01000000000000000200000003000000": "2/3",
-        "01000000000000000300000003000000": "3/3 ✅️<br>TURN IN TO %sector% DOCTOR"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$750 and 5FP"
@@ -1032,12 +978,20 @@
       "description": {
         "en": "I have to look the part if nothing else, for starters, I need a Hospital Shirt and Hospital Pants. It will make the patients more confident that I actually know what I'm doing. What can you do?"
       },
-      "requirements": {
-        "en": "Find Hospital Shirt<br>Find Hospital Pants"
+      "requirements_1": {
+        "en": "Find Hospital Shirt"
+      },
+      "requirements_2": {
+        "en": "Find Hospital Pants"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "<br>✅️ TURN IN TO %sector% DOCTOR"
+        "translate_data_1": {
+          "type1:8,9,12,13": "❌️ ## ✅️"
+        },
+        "translate_data_2": {
+          "type1:8,9,12,13": "❌️ ## ✅️"
+        },
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$700 and 5FP"
@@ -1054,8 +1008,8 @@
         "en": "Find Medical Gloves"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% DOCTOR"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$800 and 5FP"
@@ -1072,8 +1026,8 @@
         "en": "Find Painkillers - Blister"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% DOCTOR"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$600 and 5FP"
@@ -1090,8 +1044,8 @@
         "en": "Find Potassium Iodide - Blister"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% DOCTOR"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$600 and 5FP"
@@ -1104,12 +1058,26 @@
       "description": {
         "en": "Every doctor has a way of doing things, but we're all gonna make you say that 'Ahhh'. We do need something to stick up in your mouth and I'll use whatever sticks you can bring. I carve in my free time so I'll make it work."
       },
-      "requirements": {
-        "en": "Find Wooden Sticks 4\n Find Alcohol 1\nFind Rags 3"
+      "requirements_1": {
+        "en": "Find Wooden Sticks"
+      },
+      "requirements_2": {
+        "en": "Find Alcohol"
+      },
+      "requirements_3": {
+        "en": "Find Rags"
       },
       "translate_data": {
-        "01000000000000000000000004000000": "",
-        "01000000000000000300000004000000": "\nWooden Sticks 3/4\n Find Alcohol 1/1\nFind Rags 3/3"
+        "translate_data_1": {
+          "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️"
+        },
+        "translate_data_2": {
+          "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️"
+        },
+        "translate_data_3": {
+          "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️"
+        },
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$650 and 5FP"
@@ -1126,8 +1094,8 @@
         "en": "Find Vitamin Pills - Blister"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% DOCTOR"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$600 and 5FP"
@@ -1135,19 +1103,20 @@
     },
     "QuestSetup:T1_DC_Interact_Churches": {
       "name": {
-        "en": "All-terrain Crutches"
+        "en": "Just A Conspiracy"
       },
       "description": {
-        "en": "Over 62.5% of prisoners get their legs messed up at some point. Okay, I just made that up, but you get the point, I need more crutches in stock. They will probably become lethal weapons as well, but I don't mind, I'll still have a reward ready for anyone who finds some."
+        "en": "I am a man of science, but I have reasons to believe local churches have been used to manipulate a lot of local folks, and not in a good way. I will reward anyone who visits a couple of churches and check if there is anything weird with Chalices around the altar."
       },
       "requirements": {
-        "en": "Find Crutches"
+        "en": "Swab chalices at church's altars"
       },
       "translate_data": {
-        "000000000200000000000000": "❌️"
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$1,450 and 10FP<br>%sector% Trader's Shop Discounts:<br>2x Painkillers - Blister at $1,500 and 0FP"
+        "en": "$700 and 5FP"
       }
     },
     "QuestSetup:T1_DC_Interact_Fountains": {
@@ -1161,8 +1130,8 @@
         "en": "Check fountains for suspicious materials"
       },
       "translate_data": {
-        "000000000100000000000000": "❌️",
-        "010000000100000001000000": "✅️<br> TURN IN TO %sector% DOCTOR"
+        "type1:0,1,4,5": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$800 and 5FP"
@@ -1170,19 +1139,26 @@
     },
     "QuestSetup:T1_DC_Fetch_MultiplePuppetParts": {
       "name": {
-        "": ""
+        "en": "The Living Dead"
       },
       "description": {
-        "": ""
+        "en": "On the topic of murder, I want you to decimate some TEC1 puppets. We need to find out what effects the BCU has on the body, so it's time for a little research party. Your part is to chop a few limbs and bring them to me, I will do the rest. There is a reward, you don't even have to look for the puppets, they will find you."
       },
-      "requirements": {
-        "": ""
+      "requirements_1": {
+        "en": "Find Puppet Arm"
+      },
+      "requirements_2": {
+        "en": "Find Puppet Leg"
+      },
+      "requirements_3": {
+        "en": "Find Puppet Guts"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "": ""
+        "en": "$1,400 and 5FP"
       }
     },
     "QuestSetup:T2_DC_Fetch_AntiPain": {
@@ -1192,12 +1168,20 @@
       "description": {
         "en": "I never recommend taking different pills together, but why would the world's most famous criminals listen to a doctor? Antibiotics and Painkillers are out of stock, and people have started threatening me, so I'll reward anyone who brings some to the shop. Both can be found around pharmacies, hospitals, and even bathrooms."
       },
-      "requirements": {
-        "en": "Find Antibiotics - Box<br>Find Painkillers - Box"
+      "requirements_1": {
+        "en": "Find Antibiotics - Box"
+      },
+      "requirements_2": {
+        "en": "Find Painkillers - Box"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "<br>❌️",
-        "01000000000000000100000001000000": "<br>✅️ TURN IN TO %sector% DOCTOR"
+        "translate_data_1": {
+          "type1:8,9,12,13": "❌️ ## ✅️"
+        },
+        "translate_data_2": {
+          "type1:8,9,12,13": "❌️ ## ✅️"
+        },
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$1,500 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Isopropyl alcohol at $700 and 0FP"
@@ -1210,12 +1194,20 @@
       "description": {
         "en": "It beats the heck out of me why one would go near radiation, but when they do, they usually come running in here looking for help. If I don't have Activated Charcoal in my stock, the Armorer guy steps in and handles it very effectively. With a gun. Find some anti-radiation and anti-poison stuff, the reward is waiting."
       },
-      "requirements": {
-        "en": "Find Activated Charcoal - Box<br>Find potassium Ioide - Box"
+      "requirements_1": {
+        "en": "Find Activated Charcoal - Box"
+      },
+      "requirements_2": {
+        "en": "Find potassium Ioide - Box"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "<br>❌️",
-        "01000000000000000100000001000000": "<br>✅️❌️"
+        "translate_data_1": {
+          "type1:8,9,12,13": "❌️ ## ✅️"
+        },
+        "translate_data_2": {
+          "type1:8,9,12,13": "❌️ ## ✅️"
+        },
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$1,500 and 10FP<br>%sector% Trader's Shop Discounts:<br>3x Emergency Bandage at $350 and 0FP<br>1x Emergency Bandage Pack at $1,550 and 0FP"
@@ -1223,19 +1215,20 @@
     },
     "QuestSetup:T2_DC_Fetch_Crutch": {
       "name": {
-        "": ""
+        "en": "All-terrain Crutches"
       },
       "description": {
-        "": ""
+        "en": "Over 62.5% of prisoners get their legs messed up at some point. Okay, I just made that up, but you get the point, I need more crutches in stock. They will probably become lethal weapons as well, but I don't mind, I'll still have a reward ready for anyone who finds some."
       },
       "requirements": {
-        "": ""
+        "en": "Find Crutches"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "": ""
+        "en": "$1,450 and 10FP<br>%sector% Trader's Shop Discounts:<br>2x Painkillers - Blister at $1,500 and 0FP"
       }
     },
     "QuestSetup:T2_DC_Fetch_EmergencyBandagePack": {
@@ -1266,8 +1259,8 @@
         "en": "Find Hemostatic Dressing"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️ <br>TURN IN TO %sector% DOCTOR"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$1,600 and 10FP<br>%sector% Trader's Shop Discounts.<br>3x Emergency Bandage at $300 and 0FP"
@@ -1284,7 +1277,8 @@
         "": ""
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "": ""
@@ -1292,19 +1286,40 @@
     },
     "QuestSetup:T2_DC_Fetch_MedicalSet": {
       "name": {
-        "": ""
+        "en": "The Beauty Doctor"
       },
       "description": {
-        "": ""
+        "en": "I never assumed that so many hardcore prisoners would care about how they look, but when they want a change, the come to me. I need full gear for any surgery type of business and that includes shirts, pants, masks, and of cource, gloves to protect my tender hands. I need the whole set, so when you find it, bring it."
       },
-      "requirements": {
-        "": ""
+      "requirements_1": {
+        "en": "Find Hospital Shirt"
+      },
+      "requirements_2": {
+        "en": "Find Hospital Pants"
+      },
+      "requirements_3": {
+        "en": "Find Hospital Mask"
+      },
+      "requirements_4": {
+        "en": "Find Hospital Gloves"
       },
       "translate_data": {
-        "": ""
+        "translate_data_1": {
+          "type1:8,9,12,13": "❌️ ## ✅️"
+        },
+        "translate_data_2": {
+          "type1:8,9,12,13": "❌️ ## ✅️"
+        },
+        "translate_data_3": {
+          "type1:8,9,12,13": "❌️ ## ✅️"
+        },
+        "translate_data_4": {
+          "type1:8,9,12,13": "❌️ ## ✅️"
+        },
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "": ""
+        "en": "$1,450 and 10FP<br>%sector% Trader's Shop Discounts:<br>3x Emergency Bandage at $300 and 0FP<br>1x Antibiotics - Blister - 1000mg at $1,500 and 0FP<br>1x Potassium Iodide Pills - Blister at $250 and 0FP"
       }
     },
     "QuestSetup:T2_DC_Fetch_PressureDressing": {
@@ -1318,8 +1333,8 @@
         "en": "Find Pressure Dressing"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% DOCTOR"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$1,520 and 10FP<br>%sector% Trader's Shop Discounts:<br>3x Hermostatic Dressing at $650 and 0FP"
@@ -1336,8 +1351,8 @@
         "en": "Find Vitamin Pills - Box"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% DOCTOR"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$1,500 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Isopropyl alcohol at $700 and 0FP"
@@ -1354,15 +1369,8 @@
         "en": "Check graves for signs of abnormalities"
       },
       "translate_data": {
-        "000000000800000000000000": "0/8",
-        "010000000800000001000000": "1/8",
-        "020000000800000002000000": "2/8",
-        "030000000800000003000000": "3/8",
-        "040000000800000004000000": "4/8",
-        "050000000800000005000000": "5/8",
-        "060000000800000006000000": "6/8",
-        "070000000800000007000000": "7/8",
-        "080000000800000008000000": "8/8 ✅️<br>TURN IN TO %sector% DOCTOR"
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
         "en": "$2,000 and 15FP<br>%sector% Trader's Shop Discounts:<br>3x Classics Cigarettes Pack at $100 and 0FP"
@@ -1668,9 +1676,8 @@
         "en": "Find Batteries"
       },
       "translate_data": {
-        "01000000000000000000000002000000": "0/2",
-        "01000000000000000100000002000000": "1/2",
-        "01000000000000000200000002000000": "2/2 ✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$700 and 5FP"
@@ -1687,17 +1694,8 @@
         "en": "Find Bobby Pins"
       },
       "translate_data": {
-        "0100000000000000000000000a000000": "0/10",
-        "0100000000000000010000000a000000": "1/10",
-        "0100000000000000020000000a000000": "2/10",
-        "0100000000000000030000000a000000": "3/10",
-        "0100000000000000040000000a000000": "4/10",
-        "0100000000000000050000000a000000": "5/10",
-        "0100000000000000060000000a000000": "6/10",
-        "0100000000000000070000000a000000": "7/10",
-        "0100000000000000080000000a000000": "8/10",
-        "0100000000000000090000000a000000": "9/10",
-        "01000000000000000a0000000a000000": "10/10 ✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$500 and 5FP"
@@ -1714,10 +1712,8 @@
         "en": "Find Chocolate Candies"
       },
       "translate_data": {
-        "01000000000000000000000003000000": "0/3",
-        "01000000000000000100000003000000": "1/3",
-        "01000000000000000200000003000000": "2/3",
-        "01000000000000000300000003000000": "3/3 ✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$580 and 5FP"
@@ -1734,17 +1730,8 @@
         "en": "Find Duct Tape"
       },
       "translate_data": {
-        "0100000000000000000000000a000000": "0/10",
-        "0100000000000000010000000a000000": "1/10",
-        "0100000000000000020000000a000000": "2/10",
-        "0100000000000000030000000a000000": "3/10",
-        "0100000000000000040000000a000000": "4/10",
-        "0100000000000000050000000a000000": "5/10",
-        "0100000000000000060000000a000000": "6/10",
-        "0100000000000000070000000a000000": "7/10",
-        "0100000000000000080000000a000000": "8/10",
-        "0100000000000000090000000a000000": "9/10",
-        "01000000000000000a0000000a000000": "10/10 ✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$550 and 5FP"
@@ -1761,12 +1748,8 @@
         "en": "Find Glue"
       },
       "translate_data": {
-        "01000000000000000000000005000000": "0/5",
-        "01000000000000000100000005000000": "1/5",
-        "01000000000000000200000005000000": "2/5",
-        "01000000000000000300000005000000": "3/5",
-        "01000000000000000400000005000000": "4/5",
-        "01000000000000000500000005000000": "5/5 ✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$680 and 5FP"
@@ -1783,8 +1766,8 @@
         "en": "Find Grinding Stone"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$740 and 5FP"
@@ -1801,8 +1784,8 @@
         "en": "Find Needle"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$500 and 5FP"
@@ -1816,11 +1799,11 @@
         "en": "Patched clothes are better than no clothes and they, unfortunately, can't be patched without a proper Sewing Kit."
       },
       "requirements": {
-        "en": "Find Swing Kit"
+        "en": "Find Sewing Kit"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$800 and 5FP"
@@ -1837,8 +1820,8 @@
         "en": "Find Sexy Shorts"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$550 and 5FP"
@@ -1855,8 +1838,8 @@
         "en": "Find Small Tool Box"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$790 and 5FP"
@@ -1873,10 +1856,8 @@
         "en": "Find Soap"
       },
       "translate_data": {
-        "01000000000000000000000003000000": "0/3",
-        "01000000000000000100000003000000": "1/3",
-        "01000000000000000200000003000000": "2/3",
-        "01000000000000000300000003000000": "3/3 ✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$620 and 5FP"
@@ -1893,13 +1874,8 @@
         "en": "Sabotage air conditioner"
       },
       "translate_data": {
-        "000000000600000000000000": "0/6",
-        "010000000600000001000000": "1/6",
-        "020000000600000002000000": "2/6",
-        "030000000600000003000000": "3/6",
-        "040000000600000004000000": "4/6",
-        "050000000600000005000000": "5/6",
-        "060000000600000006000000": "6/6 ✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$800 and 5FP"
@@ -1916,12 +1892,8 @@
         "en": "Check telephone booths"
       },
       "translate_data": {
-        "000000000500000000000000": " 0/5",
-        "010000000500000001000000": " 1/5",
-        "020000000500000002000000": " 2/5",
-        "030000000500000003000000": " 3/5",
-        "040000000500000004000000": " 4/5",
-        "050000000500000005000000": " 5/5 ✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$800 and 5FP"
@@ -1972,8 +1944,8 @@
         "en": "Find Dildo"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$1,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>3x Tool Box at $800 and 0FP"
@@ -1984,13 +1956,14 @@
         "en": "Home Improvement"
       },
       "description": {
-        "en": ""
+        "en": "Drill is essential for building anything durable, but it is not always easy to get them. There a few old building sites around, but they are too dangerous for me. That's why the pay is good!"
       },
       "requirements": {
         "en": "Find Drill"
       },
       "translate_data": {
-        "01000000000000000000000001000000": " "
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$1,550 and 10FP"
@@ -2007,10 +1980,8 @@
         "en": "Find Paint Can"
       },
       "translate_data": {
-        "01000000000000000000000003000000": "0/3",
-        "01000000000000000100000003000000": "1/3",
-        "01000000000000000200000003000000": "2/3",
-        "01000000000000000300000003000000": "3/3 ✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$1,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>10x Soap at $50 and 0FP"
@@ -2027,8 +1998,8 @@
         "en": "Find Pickaxe"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$1,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Small Spade at $100 and 0FP"
@@ -2062,8 +2033,8 @@
         "en": "Find Radio"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$1,400 and 10FP<br>%sector% Trader's Shop Discounts:<br>3x Smartphone Battery at $400 and 0FP"
@@ -2080,8 +2051,8 @@
         "en": "Find Rebar Cutter"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$1,500 and 10FP<br>%sector% Traders Shop Discounts:<br>1x Metal Detector at $3,000 and 0FP"
@@ -2089,36 +2060,38 @@
     },
     "QuestSetup:T2_GG_Fetch_RedGhoul": {
       "name": {
-        "": ""
+        "en": "Energy Spectacle"
       },
       "description": {
-        "": ""
+        "en": "There is not a lot that can keep you going as Red Ghoul can. Just be careful to avoid Kix, he will steal it and drink it."
       },
       "requirements": {
-        "": ""
+        "en": "Find Red Ghoul Energy Dring"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "": ""
+        "en": "$1,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>3x Canteen at $200 and 0FP"
       }
     },
     "QuestSetup:T3_GG_Fetch_HikingBackpack": {
       "name": {
-        "": ""
+        "en": "Modern Day Looters"
       },
       "description": {
-        "": ""
+        "en": "Hiking Backpacks can fit so much loot that there just isn't much sense in not having them. They sell realy good, so the store could always use some."
       },
       "requirements": {
-        "": ""
+        "en": "Find Hiking Backpack"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "": ""
+        "en": "$2,200 and 20FP<br>%sector% Trader's Shop Discounts:<br>1x Bedroll at $700 and 0FP"
       }
     },
     "QuestSetup:T2_GG_Interact_Ads": {
@@ -2149,19 +2122,8 @@
         "en": "Locate files and folders around The Island"
       },
       "translate_data": {
-        "000000000500000000000000": "0/5",
-        "010000000500000001000000": "1/5",
-        "020000000500000002000000": "2/5",
-        "030000000500000003000000": "3/5",
-        "040000000500000004000000": "4/5",
-        "050000000500000005000000": "5/5 ✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER",
-        "000000000600000000000000": "0/6",
-        "010000000600000001000000": "1/6",
-        "020000000600000002000000": "2/6",
-        "030000000600000003000000": "3/6",
-        "040000000600000004000000": "4/6",
-        "050000000600000005000000": "5/6",
-        "060000000600000006000000": "6/6 ✅️<br>TURN IN TO %sector% GENERAL GOODS TRADER"
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$1,700 and 15FP<br>%sector% Trader's Shop Discounts:<br>1x Drill at $1,500 and 0FP"
@@ -2169,19 +2131,20 @@
     },
     "QuestSetup:T2_GG_Interact_FaxMachines": {
       "name": {
-        "": ""
+        "en": "Data Wipe"
       },
       "description": {
-        "": ""
+        "en": "People of the past used fax machines a lot. TEC01 might be digging around those and using the information to fortify their positions and maybe even listen in to any of the prisoners who still know how to use them. I know there is one at B0 Junkyard and at least one more in Z1 Trainyard. I will pay for erasing the data on them!"
       },
       "requirements": {
-        "": ""
+        "en": "Erase data from fax machines"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "": ""
+        "en": "$1,700 and 15FP<br>%sector% Trader's Shop Discounts:<br>1x Rebar Cutter at $2,000 and 0FP"
       }
     },
     "QuestSetup:T2_GG_Interact_WW2": {
@@ -2412,12 +2375,20 @@
       "description": {
         "en": "It is crucial that we keep good communication around The Island, it will help us survive these TEC01 games they like to play with us. B2 airfield is crucial, so I need someone to do a maintenance check there. It isn’t complicated to find, but the place is full of sentries so I’ll pay well."
       },
-      "requirements": {
-        "en": "Perform a maintenance check on the airfield generator. <br>Perform a maintenance check on the satellite dish."
+      "requirements_1": {
+        "en": "Perform a maintenance check on the airfield generator."
+      },
+      "requirements_2": {
+        "en": "Perform a maintenance check on the satellite dish."
       },
       "translate_data": {
-        "000000000100000000000000": "❌️",
-        "010000000100000001000000": "<br>✅️ TURN IN TO %sector% GENERAL GOODS TRADER"
+        "translate_data_1": {
+          "type1:0,1,4,5": "❌️ ## ✅️"
+        },
+        "translate_data_2": {
+          "type1:0,1,4,5": "❌️ ## ✅️"
+        },
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
         "en": "$8,000 and 40FP<br>%sector% Traders Shop Discounts:<br>1x Base Expansion Kit Lvl1 at15,000 and 90FP"
@@ -2502,8 +2473,8 @@
         "en": "Find an Aeroplane Repair Kit"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% MECHANIC"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
         "en": "$3,000 and 5FP"
@@ -2520,8 +2491,8 @@
         "en": "Find Brake Oil"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% MECHANIC"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
         "en": "$550 and 5FP"
@@ -2538,8 +2509,8 @@
         "en": "Find Car Battery Cables"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% MECHANIC"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
         "en": "$630 and 5FP"
@@ -2556,8 +2527,8 @@
         "en": "Find a Car Jack"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% MECHANIC"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
         "en": "$700 and 5FP"
@@ -2574,8 +2545,8 @@
         "en": "Find a Car Repair Kit"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% MECHANIC"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
         "en": "$660 and 5FP"
@@ -2592,8 +2563,8 @@
         "en": "Find a Small Gasoline Canister"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% MECHANIC"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
         "en": "$700 and 5FP"
@@ -2610,27 +2581,8 @@
         "en": "Find Metal Scraps"
       },
       "translate_data": {
-        "01000000000000000000000014000000": "0/20",
-        "01000000000000000100000014000000": "1/20",
-        "01000000000000000200000014000000": "2/20",
-        "01000000000000000300000014000000": "3/20",
-        "01000000000000000400000014000000": "4/20",
-        "01000000000000000500000014000000": "5/20",
-        "01000000000000000600000014000000": "6/20",
-        "01000000000000000700000014000000": "7/20",
-        "01000000000000000800000014000000": "8/20",
-        "01000000000000000900000014000000": "9/20",
-        "01000000000000000a00000014000000": "10/20",
-        "01000000000000000b00000014000000": "11/20",
-        "01000000000000000c00000014000000": "12/20",
-        "01000000000000000d00000014000000": "13/20",
-        "01000000000000000e00000014000000": "14/20",
-        "01000000000000000f00000014000000": "15/20",
-        "01000000000000001000000014000000": "16/20",
-        "01000000000000001100000014000000": "17/20",
-        "01000000000000001200000014000000": "18/20",
-        "01000000000000001300000014000000": "19/20",
-        "01000000000000001400000014000000": "20/20 ✅️<br>TURN IN TO %sector% MECHANIC"
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
         "en": "$500 and 5FP"
@@ -2647,8 +2599,8 @@
         "en": "Find an Oil Filter"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% MECHANIC"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
         "en": "$650 and 5FP"
@@ -2665,8 +2617,8 @@
         "en": "Find a Wrench Pipe"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% MECHANIC"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
         "en": "$550 and 5FP"
@@ -2683,19 +2635,8 @@
         "en": "Disable TVs"
       },
       "translate_data": {
-        "000000000100000000000000": "❌️",
-        "010000000100000001000000": "✅️<br>TURN IN TO %sector% MECHANIC",
-        "000000000400000000000000": "0/4",
-        "010000000400000001000000": "1/4",
-        "020000000400000002000000": "2/4",
-        "030000000400000003000000": "3/4",
-        "040000000400000004000000": "4/4 ✅️<br>TURN IN TO %sector% MECHANIC",
-        "000000000500000000000000": "0/5",
-        "010000000500000001000000": "1/5",
-        "020000000500000002000000": "2/5",
-        "030000000500000003000000": "3/5",
-        "040000000500000004000000": "4/5",
-        "050000000500000005000000": "5/5 ✅️<br>TURN IN TO %sector% MECHANIC"
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
         "en": "$800 and 5FP"
@@ -2703,36 +2644,38 @@
     },
     "QuestSetup:T2_MC_Fetch_CarBattery": {
       "name": {
-        "": ""
+        "en": "One Battery To Rule Them All"
       },
       "description": {
-        "": ""
+        "en": "Cars are useless without a battery, so you better help out and bring me one. I'm not gonna beg, a reward is ready so go, tear through the houses, gas stations, and garages. Just don't be an asshole and bring me an empty one."
       },
       "requirements": {
-        "": ""
+        "en": "Find a Car Battery"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "": ""
+        "en": "$1,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Car Jack at $1,500 and 0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_DirtbikeBody": {
       "name": {
-        "": ""
+        "en": "Made For Dirt"
       },
       "description": {
-        "": ""
+        "en": "I'm a sucker for Dirtbikes, but it seems that everyone else is too. I need a Dirtbike Body for a personal project, but my stock is empty. There are not a lot of them, but I'll take any kind. You'll have most luck around garagesm but people drop them everywhere so keep you eyes open."
       },
       "requirements": {
-        "": ""
+        "en": "Find any Dirtbike Body"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "": ""
+        "en": "$1,550 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Car Repair Kit at $1,200 and 0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_DirtbikeBrakelight": {
@@ -2746,8 +2689,8 @@
         "en": "Find a Dirtbike Brake Light"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% MECHANIC"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
         "en": "$1,200 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Dirtbike Front Wheel Cover at $150 and 0FP"
@@ -2755,104 +2698,110 @@
     },
     "QuestSetup:T2_MC_Fetch_DirtbikeFender": {
       "name": {
-        "": ""
+        "en": "Riding Clean"
       },
       "description": {
-        "": ""
+        "en": "A lot of punks keep saying ''It's always raining on The Island, my clothes are wet, boo-hoo'', well imagine them riding a Dirbike through the woods without a Fender. Find some for me so I can make money on them. You'll make some too, don't worry."
       },
       "requirements": {
-        "": ""
+        "en": "Find a Dirtbike Fender"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "": ""
+        "en": "$1,450 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Dirtbike Headlights at $150 and 0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_DirtbikeFrontShield": {
       "name": {
-        "": ""
+        "en": "Just A Bit Of Safety"
       },
       "description": {
-        "": ""
+        "en": "It's not smart going into a gunfight on a Dirtbike, but it sure is fun. People buy the Front Shield as a placebo, but I don't mind them clearing my stock. Speaking of that, the stock is empty so I'll reward anyone who finds a Front Shield and brings it to the shop."
       },
       "requirements": {
-        "": ""
+        "en": "Find a Dirbike Front Shield"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "": ""
+        "en": "$1,480 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Dirtbike Hellride Skull at $200 and 0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_DirtbikeHeadlights": {
       "name": {
-        "": ""
+        "en": "A Speck Of Light"
       },
       "description": {
-        "": ""
+        "en": "My Dirtbike project is on hold because guess what, driving it at night is suicide. Driving it at night without Headlights is even worse. Since I can't continue without them, you better find me some. If I would go search for it I would start at garages, gas statons, and maybe even the motocross track in the Z3 Sector. I'll be waiting with the reward."
       },
       "requirements": {
-        "": ""
+        "en": "Find Dirtbike Headlights"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "": ""
+        "en": "$1,580 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Dirtbike Front Shield at $200 and 0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_DirtbikeHellriderSkull": {
       "name": {
-        "": ""
+        "en": "Hellrider's Paradise"
       },
       "description": {
-        "": ""
+        "en": "Nobody is interesting enough for me to give a damn, but when a horned Dirtbike goes right at ya, you start to feel stuff. Check the garages, check the Junkyard in the B0 sector, and bring me a Hellride Skull, I promise I'll be gererous."
       },
       "requirements": {
-        "": ""
+        "en": "Find a Dirtbike Hellrider Skull"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "": ""
+        "en": "$1,580 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Dirbike Fender at $200 and 0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_DirtbikeWheels": {
       "name": {
-        "": ""
+        "en": "Rolling Thunder"
       },
       "description": {
-        "": ""
+        "en": "Finding the right wheels for the Dirtbike is a piece of work, that's why I pay for it, can't be bothered to look by myself. I need both the frint and the back one, so tear down the Junkyard in B0 and the nearby garages. I'll pay big bucks for this one."
       },
       "requirements": {
-        "": ""
+        "en": "Find a Dirtbike Wheels"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "": ""
+        "en": "$1,400 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Dirtbike Hellride Body at $1,000 and 0FP<br>1x Dirtbike Body at $1,000 and 0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_GasolineCanister": {
       "name": {
-        "": ""
+        "en": "Serious Refill"
       },
       "description": {
-        "": ""
+        "en": "Let's not mess around, gasoline cant't be found just anywhere and everyone knows that, but it's a real survival tool. If a person is serious about surviving, they need gas and a lot of it. The problem is storing it. That's wy I need a Gasoline Canister. You find it, I'll pay for it."
       },
       "requirements": {
-        "": ""
+        "en": "Find a Gasoline Canister"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "": ""
+        "en": "$1,500 and 5FP<br>%sector% Trader's Shop Discounts:<br>2x Small Gasoline Canister at $150 and 0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_MotorbikeBattery": {
@@ -2866,8 +2815,8 @@
         "en": "Find a Motorbike Battery"
       },
       "translate_data": {
-        "01000000000000000000000001000000": "❌️",
-        "01000000000000000100000001000000": "✅️<br>TURN IN TO %sector% MECHANIC"
+        "type1:8,9,12,13": "❌️ ## ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
         "en": "$1,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Small Vehicle Storage Rack at $1,000 and 0FP"
@@ -2884,8 +2833,8 @@
         "en": "Disable generators"
       },
       "translate_data": {
-        "0100000004000000010000004900": "1/4",
-        "02000000040000000200000049004400": "2/4"
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
         "en": "$2,000 and 20FP<br>%sector% Trader's Shop Discounts:<br>1x Car Jack at $1,000 and 0FP"
@@ -2893,19 +2842,20 @@
     },
     "QuestSetup:T2_MC_Interact_ResetCarLift": {
       "name": {
-        "": ""
+        "en": "Eliminating Competition"
       },
       "description": {
-        "": ""
+        "en": "I heard some punks think I'm expensive. Well, I don't care! Do a little sabotaging so everyone needs to come here. You will find Car Lifts in all local car workshops."
       },
       "requirements": {
-        "": ""
+        "en": "Sabotage car lifts"
       },
       "translate_data": {
-        "": ""
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "": ""
+        "en": "$2,000 and 20FP<br>%sector% Trader's Shop Discounts:<br>2x Car Repair Kit at $800 and 0FP"
       }
     },
     "QuestSetup:T3_MC_Fetch_CarLights": {

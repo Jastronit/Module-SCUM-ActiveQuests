@@ -224,21 +224,36 @@ def attach_tracking_data(conn, quests):
     cursor = conn.cursor()
     for quest in quests:
         quest_id = quest.get("id")
+
         cursor.execute("""
             SELECT data
             FROM tracking_data
             WHERE tracking_data_set_id = ?
+            ORDER BY id
         """, (quest_id,))
-        row = cursor.fetchone()
-        if row and "data" in row.keys():
-            # Konverzia binárnych dát na hex string
-            blob_data = row["data"]
-            if blob_data is not None:
-                quest["data"] = blob_data.hex()
-            else:
-                quest["data"] = None
+
+        rows = cursor.fetchall()
+
+        # --- SINGLE ITEM (nezmenené) ---
+        if len(rows) == 1:
+            blob_data = rows[0]["data"]
+            quest["data"] = blob_data.hex() if blob_data else None
+
+        # --- MULTI ITEM (OPRAVENÉ) ---
+        elif len(rows) > 1:
+            quest["data"] = []
+
+            for idx, row in enumerate(rows):
+                hex_val = row["data"].hex() if row["data"] else None
+                quest["data"].append(hex_val)
+
+                # 🔑 DÔLEŽITÉ: vytvor kľúče, ktoré widget očakáva
+                # quest[f"requirements_{idx + 1}"] = ""        # GUI si doplní text
+                # quest[f"translate_data_{idx + 1}"] = {}     # GUI si načíta z translate.json
+
         else:
             quest["data"] = None
+
     return quests
 # ////-----------------------------------------------------------------------------------------
 

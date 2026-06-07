@@ -91,7 +91,7 @@
       "font": "Consolas",
       "size": 8,
       "color": "#ffffff",
-      "data": "%req_data% %requirements%"
+      "data": "📋 %requirements% %req_data%"
     },
     {
       "font": "Consolas",
@@ -118,7 +118,8 @@
       "GG": false,
       "MC": false,
       "AR": false,
-      "DC": false
+      "DC": false,
+      "RH": false
     }
   },
   "sort": {
@@ -129,7 +130,7 @@
   },
   "display": {
     "show_name": true,
-    "show_description": false,
+    "show_description": true,
     "show_requirements": true,
     "show_rewards": true,
     "show_data": true,
@@ -145,6 +146,7 @@
     "toggle_shop_MC": "ctrl+alt+m",
     "toggle_shop_AR": "ctrl+alt+r",
     "toggle_shop_DC": "ctrl+alt+d",
+    "toggle_shop_RH": "ctrl+alt+h",
     "sort_order_asc": "alt+shift+u",
     "sort_order_desc": "alt+shift+d",
     "cycle_sort_key": "alt+shift+n",
@@ -160,5 +162,6 @@
     "increase_page_size": "shift+2",
     "decrease_page_size": "shift+8"
   },
-  "page_size": 8
+  "smart_single_item": true,
+  "page_size": 4
 }

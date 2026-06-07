@@ -55,3 +55,11 @@ Changed the way data is displayed, with support for repeating formatting based o
 Improved the data translation system — it now only needs a single line to fully translate, with support for required randomly generated amounts and overflow handling for quests that require killing a certain number of puppets.
 Added a feature to check whether all requirements have been met, and if so, allows custom text formatting with two color modes.
 Reworked additional quests.
+
+[2.2] Beta
+[Logic]
+Added a new setting to automatically hide the required item count when only one item is needed.
+Added the default shortcut CTRL + ALT + H for filtering the new trader.
+
+[Other]
+Reworked quest formatting and translated additional quests.

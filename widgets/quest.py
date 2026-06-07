@@ -228,27 +228,39 @@ def parse_smart_translate_key(hex_data: str, translate_key: str, flat: dict) -> 
         return None
 
 
-def apply_smart_template(template: str, parsed_data: dict, flat: dict) -> str:
+def apply_smart_template(template: str, parsed_data: dict, flat: dict, smart_single: bool = False) -> str:
     """
     Aplikuje šablónu s inteligentnými tokenmi.
+
+    smart_single: ak True a required==1, vyreže %complete%/%required% prefix
+                  z oboch strán šablóny (incomplete aj complete).
+                  Nastavuje sa cez "smart_single_item": true v config/quest.json.
+                  Default je False = správanie ako doteraz (šablóna sa použije presne).
     """
     parts = template.split(" ## ", 1)
     incomplete_template = parts[0]
     complete_suffix = parts[1] if len(parts) > 1 else ""
-    
+
     if parsed_data["is_complete"] and complete_suffix:
         result = complete_suffix
     else:
         result = incomplete_template
-    
+
+    # 🆕 SMART SINGLE: ak required==1, vyreže "X/1 " prefix zo zvolenej strany
+    if smart_single and parsed_data["required"] == 1:
+        # Nahradíme %complete%/%required% (vrátane prípadnej medzery za tým) prázdnym reťazcom
+        result = re.sub(r'%complete%/%required%\s*', '', result)
+        result = re.sub(r'%required%/%required%\s*', '', result)
+        result = result.strip()
+
     result = result.replace("%complete%", str(parsed_data["complete"]))
     result = result.replace("%required%", str(parsed_data["required"]))
-    
+
     for key, val in flat.items():
         token = f"%{key}%"
         if token in result:
             result = result.replace(token, str(val) if val is not None else "")
-    
+
     return result
 
 # ============================================================================
@@ -292,7 +304,7 @@ def check_all_requirements_complete(quest_data_list: list, flat: dict) -> bool:
     return True
 
 
-def process_multi_item_quest(quest_data_list: list, flat: dict) -> str:
+def process_multi_item_quest(quest_data_list: list, flat: dict, smart_single: bool = False) -> str:
     """
     Spracuje quest s viacerými tracking items.
     """
@@ -318,7 +330,7 @@ def process_multi_item_quest(quest_data_list: list, flat: dict) -> str:
             if translate_key.startswith("type1:"):
                 parsed = parse_smart_translate_key(hex_data, translate_key, flat)
                 if parsed:
-                    matched_value = apply_smart_template(translate_template, parsed, flat)
+                    matched_value = apply_smart_template(translate_template, parsed, flat, smart_single=smart_single)
                     break
         
         if matched_value is None and hex_data in translate_data:
@@ -462,9 +474,10 @@ def replace_tokens_html_simple(template: str, combined: dict, globals_dict: dict
             # ŠTANDARDNÉ SPRACOVANIE PRE req_data
             if key == "req_data" and isinstance(val, dict):
                 quest_data = flat.get("data")
+                smart_single = cfg.get("smart_single_item", False) if isinstance(cfg, dict) else False
                 
                 if isinstance(quest_data, list):
-                    matched_value = process_multi_item_quest(quest_data, flat)
+                    matched_value = process_multi_item_quest(quest_data, flat, smart_single=smart_single)
                 else:
                     quest_data_key = quest_data if isinstance(quest_data, str) else ""
                     matched_value = None
@@ -473,7 +486,7 @@ def replace_tokens_html_simple(template: str, combined: dict, globals_dict: dict
                         if translate_key.startswith("type1:"):
                             parsed = parse_smart_translate_key(quest_data_key, translate_key, flat)
                             if parsed:
-                                matched_value = apply_smart_template(translate_template, parsed, flat)
+                                matched_value = apply_smart_template(translate_template, parsed, flat, smart_single=smart_single)
                                 break
                     
                     if matched_value is None and quest_data_key in val:
@@ -560,7 +573,8 @@ DEFAULT_CONFIG = {
     "filter": {"enabled": True, "sectors": {}},
     "sort": {"keys": ["time_remaining"], "order": "asc"},
     "display": {},
-    "shortcuts": {}
+    "shortcuts": {},
+    "smart_single_item": False
 }
 
 SORT_KEY_OPTIONS = [

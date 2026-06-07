@@ -2,7 +2,7 @@
   "quests": {
     "QuestSetup:T1_AR_Fetch_12GaugeAmmobox": {
       "name": {
-        "en": "12 Gauge Ammobox"
+        "en": "🪖 12 Gauge Ammobox"
       },
       "description": {
         "en": "12 gauge ammoboxes are out of stock, and I can't be bothered to go find more myself. There is a reward."
@@ -15,12 +15,12 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$1,300 and 5FP"
+        "en": "💲️1,300 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_AR_Fetch_22CalAmmobox": {
       "name": {
-        "en": "Cal .22 Ammobox"
+        "en": "🪖 Cal .22 Ammobox"
       },
       "description": {
         "en": "Cal .22 ammoboxes are out of stock. That's it, you have all the info."
@@ -33,12 +33,12 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$700 and 5FP"
+        "en": "💲️700 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_AR_Fetch_357Ammobox": {
       "name": {
-        "en": ".357 Ammobox"
+        "en": "🪖️ .357 Ammobox"
       },
       "description": {
         "en": ".357 ammoboxes are out of stock. Shame. I'll give you something if you change that."
@@ -51,12 +51,12 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$1,500 and 5FP"
+        "en": "💲️1,500 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_AR_Fetch_38Ammobox": {
       "name": {
-        "en": ".38 Ammobox"
+        "en": "🪖️ .38 Ammobox"
       },
       "description": {
         "en": ".38 ammoboxes are out of stock, how am I supposed to keep the peace around here? Let's restock."
@@ -69,12 +69,12 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$1,350 and 5FP"
+        "en": "💲️1,350 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_AR_Fetch_44Ammobox": {
       "name": {
-        "en": ".44 Ammobox"
+        "en": "🪖️ .44 Ammobox"
       },
       "description": {
         "en": ".44 ammoboxes are out of stock, and I really like .44 ammoboxes. I need some more."
@@ -87,12 +87,12 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$1,800 and 0FP"
+        "en": "💲️1,800 and ⭐️0FP"
       }
     },
     "QuestSetup:T1_AR_Fetch_45ACPAmmobox": {
       "name": {
-        "en": "45 ACP Ammobox"
+        "en": "🪖️ 45 ACP Ammobox"
       },
       "description": {
         "en": ".45 ACP ammoboxes are out of stock, but you can find them anywhere really, you even get a reward."
@@ -105,12 +105,12 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$2,600 and 5FP"
+        "en": "💲️2,600 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_AR_Fetch_50AEAmmobox": {
       "name": {
-        "en": "50 AE Ammobox"
+        "en": "🪖️ 50 AE Ammobox"
       },
       "description": {
         "en": "50AE ammoboxes are out of stock, and you people really like to buy those. Restock is in order."
@@ -123,12 +123,12 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$3,000 and 5FP"
+        "en": "💲️3,000 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_AR_Fetch_9mmAmmobox": {
       "name": {
-        "en": "9mm Ammobox"
+        "en": "🪖️ 9mm Ammobox"
       },
       "description": {
         "en": "9mm ammoboxes are out of stock, and throwing rocks is primitive. Loot some and get a prize."
@@ -141,12 +141,12 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$1,500 and 5FP"
+        "en": "💲️1,500 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_AR_Fetch_9x39Ammobox": {
       "name": {
-        "en": "9x39mm Ammobox"
+        "en": "🪖️ 9x39mm Ammobox"
       },
       "description": {
         "en": "9x39mm ammoboxes are out of stock, so I am actually bothered to ask someone to find some more."
@@ -159,12 +159,12 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$3,000 and 5FP"
+        "en": "💲️3,000 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_AR_Fetch_Block21": {
       "name": {
-        "en": "Block 21 Pistol"
+        "en": "🪖️ Block 21 Pistol"
       },
       "description": {
         "en": "Everyone loves using Block 21. Maybe because it's so cheap. The stock is getting empty, and it needs a refill."
@@ -173,16 +173,16 @@
         "en": "Find Block 21 Pistol"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$800 and 5FP"
+        "en": "💲️800 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_AR_Fetch_M9": {
       "name": {
-        "en": "M9 Pistol"
+        "en": "🪖️ M9 Pistol"
       },
       "description": {
         "en": "Can't beat the classic M9. Find one and get something in return."
@@ -191,34 +191,34 @@
         "en": "Find M9 Pistol"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$800 and 5FP"
+        "en": "💲️800 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_AR_Fetch_WeaponFlashlightM9": {
       "name": {
-        "en": "M9 Flashlight"
+        "en": "🪖️ M9 Flashlight"
       },
       "description": {
         "en": "M9 without a flashlight will get you in trouble, I need to sell more or I will start losing customers."
       },
       "requirements": {
-        "en": "Find M9 Flashlight"
+        "en": "Find M9 Flashlight 🔦️"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$600 and 5FP"
+        "en": "💲️600 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_AR_Kill_PuppetsBlunt": {
       "name": {
-        "en": "Blunt Practice Runs"
+        "en": "🪖️ Blunt Practice Runs"
       },
       "description": {
         "en": "You know what's annoying? Puppets are. Everyone should get acquainted with smashing their heads in, so why not practice a bit? Take a blunt weapon and have fun."
@@ -231,12 +231,12 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$1,500 and 5FP"
+        "en": "💲️1,500 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_AR_Kill_PuppetsBows": {
       "name": {
-        "en": "Medieval Sniper"
+        "en": "🪖️ Medieval Sniper"
       },
       "description": {
         "en": "What type of jewelry would a puppet wear? An arrow for each eye seems appropriate. I'm sure you can do it, and I will even pay you."
@@ -249,12 +249,12 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$1,500 and 5FP"
+        "en": "💲️1,500 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_AR_Kill_PuppetsSharp": {
       "name": {
-        "en": "Sharp Practice Runs"
+        "en": "🪖️ Sharp Practice Runs"
       },
       "description": {
         "en": "Those annoying puppets could do with a haircut. Take a sharp weapon and trim them around the neck area, that's modern these days. Have fun!"
@@ -267,12 +267,12 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$1,500 and 5FP"
+        "en": "💲️1,500 and ⭐️5FP"
       }
     },
     "QuestSetup:T2_AR_Fetch_AK47": {
       "name": {
-        "en": "Good Ol' Reliable"
+        "en": "🪖️ Good Ol' Reliable"
       },
       "description": {
         "en": "Ah, yes. The AK-47. I've sold more of them in this shop than all other weapons combined, and the only guy who has ever complained is now a puppet somewhere on the coast. The stock is obviously empty, so I need more."
@@ -281,16 +281,16 @@
         "en": "Find a AK-47"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$4,500 and 10FP<br>C2 Trader's Shop Discounts:<br>1x Compound Bow at $1,000 and 0FP<br>24x Broadhead Carbon Arrow at $20 and 0FP<br>1x Military Quiver at $4,000 and 0FP"
+        "en": "💲️4,500 and ⭐️10FP<br>🗺️C2 Trader's Shop Discounts:<br>🔖️1x Compound Bow at 💲️1,000 and ⭐️0FP<br>🔖️24x Broadhead Carbon Arrow at 💲️20 and ⭐️0FP<br>🔖️1x Military Quiver at 💲️4,000 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_AR_Fetch_AK47Rail": {
       "name": {
-        "en": "RIS Adapters"
+        "en": "🪖️ RIS Adapters"
       },
       "description": {
         "en": "A rifle by itself is good, but if you add a scope it's even better. For that purpose, I need to sell rails in my shop, and a RIS Adapter will do wonders. I've always dreamed about being rich."
@@ -299,16 +299,16 @@
         "en": "Find a RIS Adapter"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$1,200 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Red Dot Sight at $1,200 and 0FP"
+        "en": "💲️1,200 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Red Dot Sight at 💲️1,200 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_AR_Fetch_AKM": {
       "name": {
-        "en": "When Good Gets Better"
+        "en": "🪖️ When Good Gets Better"
       },
       "description": {
         "en": "AK-47 has a successor, and it seems to kill stuff just fine. Help the local business and fill the stock so I can actually sell something."
@@ -317,11 +317,11 @@
         "en": "Find a AKM"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$2,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>3x VHS Magazine at $800<br>3x AK15 Magazine at $400<br>3x AK47 Magazine at $500"
+        "en": "💲️2,600 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️3x VHS Magazine at 💲️800<br>🔖️3x AK15 Magazine at 💲️400<br>🔖️3x AK47 Magazine at 💲️500"
       }
     },
     "QuestSetup:T2_AR_Fetch_AKS-74U": {
@@ -344,7 +344,7 @@
     },
     "QuestSetup:T2_AR_Fetch_Kar98k": {
       "name": {
-        "en": "Blue Pill Bolt Action"
+        "en": "🪖️ Blue Pill Bolt Action"
       },
       "description": {
         "en": "When you don't want to get close to your prey, a Kar98 is a nice option. Unfortunately for me, it's a bit old so you can't find one just anywhere. A reward is waiting for anyone who brings one to me."
@@ -353,16 +353,16 @@
         "en": "Find a Kar98"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$3,700 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Weapon Ghillie at $1,800 and 0FP"
+        "en": "💲️3,700 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Weapon Ghillie at 💲️1,800 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_AR_Fetch_M249": {
       "name": {
-        "en": "Horde Mower 9000"
+        "en": "🪖️ Horde Mower 9000"
       },
       "description": {
         "en": "When someone needs to mow down a horde, they buy an M249. As there are no left in the shop, the number of hordes around the outpost is making me uncomfortable. The reward is ready for anyone who brings me a fresh suply."
@@ -375,12 +375,12 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$4,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x VHS 2 at $8,000 and 0FP"
+        "en": "💲️4,600 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x VHS 2 at 💲️8,000 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_AR_Fetch_M82Scope": {
       "name": {
-        "en": "M82 Scopes"
+        "en": "🪖️ M82 Scopes"
       },
       "description": {
         "en": "Having a cannon for a rifle is cool. It gets even better when you can actually hit something. For that purpose, I need to stock up on some M82 Scopes."
@@ -389,34 +389,34 @@
         "en": "Find a M82 Scope"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$2,500 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x ACOG at $1,700 and 0FP"
+        "en": "💲️2,500 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x ACOG at 💲️1,700 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_AR_Fetch_Mosin": {
       "name": {
-        "en": "Red Pill Bolt Action"
+        "en": "🪖️ Red Pill Bolt Action"
       },
       "description": {
         "en": "Mosin Nagant or Kar98? I'm a pro so it doesn't matter to me. I'm all out of Mosins though."
       },
       "requirements": {
-        "en": "Find a Mosin Nagant"
+        "en": "Find a Mosin Nagant (1891)"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$3,500 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Ghillie Suit Top at $2,000 and 0FP<br>1x Ghillie Suit Bottom at $2,000 and 0FP"
+        "en": "💲️3,500 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Ghillie Suit Top at 💲️2,000 and ⭐️0FP<br>🔖️1x Ghillie Suit Bottom at 💲️2,000 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_AR_Fetch_NightVisionGoggles": {
       "name": {
-        "en": "Night Time Story"
+        "en": "🪖️ Night Time Story"
       },
       "description": {
         "en": "If you go hunting in the dark with no equipment, you're gonna end up being hunted. I keep selling the Goggles, and my customers keep forgetting the batteries, but profit is profit."
@@ -425,11 +425,11 @@
         "en": "Find Night Vision Goggles"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$2,150 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Bushman at $1,200 and 0FP"
+        "en": "💲️2,150 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Bushman at 💲️1,200 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_AR_Fetch_RPK": {
@@ -443,7 +443,7 @@
         "": ""
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
@@ -452,7 +452,7 @@
     },
     "QuestSetup:T2_AR_Fetch_ScopeM1": {
       "name": {
-        "en": "M1 Scopes"
+        "en": "🪖️ M1 Scopes"
       },
       "description": {
         "en": "Some of my customers keep returning the M1 Garand saying the cant't hit anything. Most of them also had blue thums. I gave them a discount on M1 Scopes, so now I don't have any left."
@@ -461,16 +461,16 @@
         "en": "Find a M1 Scope"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$1,800 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x V3 Holographic Sight at $1,200 and 0FP"
+        "en": "💲️1,800 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x V3 Holographic Sight at 💲️1,200 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_AR_Fetch_WeaponCleaningKit": {
       "name": {
-        "en": "Neat And Tidy"
+        "en": "🪖️ Neat And Tidy"
       },
       "description": {
         "en": "The shop can't be picky about what guns to buy, so I have to clean all of them. It's about time that people learn to clean their weapons."
@@ -483,12 +483,12 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$1,700 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x AK15 Suppressor at $1,800 and 0FP"
+        "en": "💲️1,700 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x AK15 Suppressor at 💲️1,800 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_AR_Interact_PoliceStationData": {
       "name": {
-        "en": "The Blues"
+        "en": "🪖️ The Blues"
       },
       "description": {
         "en": "Every police station has a bunch of surveillance cameras and some satellites on the roofs. I need someone to pull a wire or two so we'll know for sure TEC1 cant't use those against the good people that are my customers."
@@ -504,12 +504,12 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$3,000 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Handgun Suppressor at $1,000 and 30FP"
+        "en": "💲️3,000 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Handgun Suppressor at 💲️1,000 and ⭐️30FP"
       }
     },
     "QuestSetup:T2_AR_Kill_Puppets": {
       "name": {
-        "en": "A Proper Shootout"
+        "en": "🪖️ A Proper Shootout"
       },
       "description": {
         "en": "Like a Western. TEC1 sends puppets at us, send the puppets undergound. Easy. This should be a proper stress relief for anyone who's been here a while. The job is simple, just kill a bunch of them and get a reward. I'm wonderful like that."
@@ -522,7 +522,7 @@
         "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "en": "$2,500 and 15FP"
+        "en": "💲️2,500 and ⭐️15FP"
       }
     },
     "QuestSetup:T3_AR_Fetch_C4": {
@@ -629,19 +629,20 @@
     },
     "QuestSetup:T3_AR_Fetch_SVD": {
       "name": {
-        "": ""
+        "en": "🪖️ Stress Relief"
       },
       "description": {
-        "": ""
+        "en": "The Soviet semi-automatic monster, what better way to get some of that stress out than to try it out on a few unlucky bodies. It's expensive so the reward is good."
       },
       "requirements": {
-        "": ""
+        "en": "Find an SVD"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "": ""
+        "en": "💲️6,000 and ⭐️20FP<br>🗺️%sector% Trader's Shop Discounts:🔖️1x RPK at 💲️10,000 and ⭐️0FP<br>🔖️3x RPK Magazine at...<br>🔖️5x 7.62x39mm Ammunition..."
       }
     },
     "QuestSetup:T3_AR_Fetch_TNT": {
@@ -663,19 +664,20 @@
     },
     "QuestSetup:T3_AR_Fetch_Uranium": {
       "name": {
-        "": ""
+        "en": "🪖️ Atomic 92"
       },
       "description": {
-        "": ""
+        "en": "Personally, I don't want to get near the stuff, that's why I'm offering a reward. Grab a Hazmat Suit. Thank me later."
       },
       "requirements": {
-        "": ""
+        "en": "Find Depleted Uranium ☢️"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "": ""
+        "en": "💲️6,500 and ⭐️20FP<br>🗺️%sector% Trader's Shop Discounts:🔖️1x M82A1 at 💲️20,000<br>🔖️2x M82A1 Magazine at...<br>🔖️3x .50 BMG Amunition..."
       }
     },
     "QuestSetup:T3_AR_Fetch_VHS_BG": {
@@ -782,87 +784,104 @@
     },
     "QuestSetup:T3_AR_Kill_RazorPuppetA1": {
       "name": {
-        "": ""
+        "en": "🪖️ Abominations"
       },
       "description": {
-        "": ""
+        "en": "What those TEC1 creeps have done to human bodies should get them punished, so if nobody will do it, I will. Or I will at least pay for someone else to do it. Kill some puppets and a few of those razor monstrosities in A1 bunker and I will pay. Remember, aim for the dead."
       },
-      "requirements": {
-        "": ""
+      "requirements_1": {
+        "en": "Kill Razors"
+      },
+      "requirements_2": {
+        "en": "Kill puppets"
       },
       "translate_data": {
-        "": ""
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "": ""
+        "en": "💲️7,500 and ⭐️30FP"
       }
     },
     "QuestSetup:T3_AR_Kill_RazorPuppetA3": {
       "name": {
-        "": ""
+        "en": "🪖️ Abominations"
       },
       "description": {
-        "": ""
+        "en": "What those TEC1 creeps have done to human bodies should get them punished, so if nobody will do it, I will. Or I will at least pay for someone else to do it. Kill some puppets and a few of those razor monstrosities in A3 bunker and I will pay. Remember, aim for the dead."
       },
-      "requirements": {
-        "": ""
+      "requirements_1": {
+        "en": "Kill Razors"
+      },
+      "requirements_2": {
+        "en": "Kill puppets"
       },
       "translate_data": {
-        "": ""
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "": ""
+        "en": "💲️7,500 and ⭐️30FP"
       }
     },
     "QuestSetup:T3_AR_Kill_RazorPuppetC4": {
       "name": {
-        "": ""
+        "en": "🪖️ Abominations"
       },
       "description": {
-        "": ""
+        "en": "What those TEC1 creeps have done to human bodies should get them punished, so if nobody will do it, I will. Or I will at least pay for someone else to do it. Kill some puppets and a few of those razor monstrosities in C4 bunker and I will pay. Remember, aim for the dead."
       },
-      "requirements": {
-        "": ""
+      "requirements_1": {
+        "en": "Kill Razors"
+      },
+      "requirements_2": {
+        "en": "Kill puppets"
       },
       "translate_data": {
-        "": ""
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "": ""
+        "en": "💲️7,500 and ⭐️30FP"
       }
     },
     "QuestSetup:T3_AR_Kill_RazorPuppetD1": {
       "name": {
-        "": ""
+        "en": "🪖️ Abominations"
       },
       "description": {
-        "": ""
+        "en": "What those TEC1 creeps have done to human bodies should get them punished, so if nobody will do it, I will. Or I will at least pay for someone else to do it. Kill some puppets and a few of those razor monstrosities in D1 bunker and I will pay. Remember, aim for the dead."
       },
-      "requirements": {
-        "": ""
+      "requirements_1": {
+        "en": "Kill Razors"
+      },
+      "requirements_2": {
+        "en": "Kill puppets"
       },
       "translate_data": {
-        "": ""
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "": ""
+        "en": "💲️7,500 and ⭐️30FP"
       }
     },
     "QuestSetup:T3_AR_Kill_Sentry": {
       "name": {
-        "": ""
+        "en": "🪖️ Chunk Of Metal"
       },
       "description": {
-        "": ""
+        "en": "I hate when someone has bigger guns than me, and TEC1 went overboard with those sentries. If anyone can kill one by any means necessary, I will be very generous. One may even get a 'Customer of the Month' title. Just kidding. Good luck."
       },
       "requirements": {
-        "": ""
+        "en": "Kill sentry"
       },
       "translate_data": {
-        "": ""
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% ARMORER"
       },
       "rewards": {
-        "": ""
+        "en": "💲️8,000 and ⭐️50FP"
       }
     },
     "QuestSetup:T3_AR_Mix_NuclearCombo": {
@@ -901,43 +920,43 @@
     },
     "QuestSetup:T1_DC_Fetch_ActivatedCharcoal01": {
       "name": {
-        "en": "Little Poisons"
+        "en": "🩺️ Little Poisons"
       },
       "description": {
         "en": "It's a hars life here on The Island, but it's not harsh enough for everyone to eat every single poison mushroom found in the woods, I mean seriously?! That makes Charcoal a top-selling product if nothing else, but I need to restock."
       },
       "requirements": {
-        "en": "Find Activated Charcoal - Blister"
+        "en": "Find Activated Charcoal - Blister 💊️"
       },
       "translate_data": {
         "type1:8,9,12,13": "❌️ ## ✅️",
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$600 and 5FP"
+        "en": "💲️600 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_DC_Fetch_Antibiotics01": {
       "name": {
-        "en": "Just A Scratch"
+        "en": "🩺️ Just A Scratch"
       },
       "description": {
         "en": "When someone gets a cut, it's generally a bad thing. If they are a prisoner on The Island, they are also gonna get an infection. Check the abandoned pharmacies and hospitals and try to fing some Antibiotics for my shop."
       },
       "requirements": {
-        "en": "Find Antibiotics - Blister"
+        "en": "Find Antibiotics - Blister 💊️"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$600 and 5FP"
+        "en": "💲️600 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_DC_Fetch_DisposableMasks": {
       "name": {
-        "en": "Smelly Prisoners"
+        "en": "🩺️ Smelly Prisoners"
       },
       "description": {
         "en": "TEC1 didn't provide us with toothpaste so sometimes my eyes bleed when patients start talking. Some Disposable mask will help me with that one, so I'll pay if you find any."
@@ -950,12 +969,12 @@
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$500 and 5FP"
+        "en": "💲️500 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_DC_Fetch_EmergencyBandage": {
       "name": {
-        "en": "Filling The Holes"
+        "en": "🩺️ Filling The Holes"
       },
       "description": {
         "en": "I'm not exactly a magician, if someone wants me to fix them up, I need bandages, and lots of them. They have the 'Emergency' in them for a purpose you know."
@@ -968,12 +987,12 @@
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$750 and 5FP"
+        "en": "💲️750 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_DC_Fetch_MedicalClothes": {
       "name": {
-        "en": "Improvised Doctor"
+        "en": "🩺️ Improvised Doctor"
       },
       "description": {
         "en": "I have to look the part if nothing else, for starters, I need a Hospital Shirt and Hospital Pants. It will make the patients more confident that I actually know what I'm doing. What can you do?"
@@ -986,20 +1005,20 @@
       },
       "translate_data": {
         "translate_data_1": {
-          "type1:8,9,12,13": "❌️ ## ✅️"
+          "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️"
         },
         "translate_data_2": {
-          "type1:8,9,12,13": "❌️ ## ✅️"
+          "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️"
         },
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$700 and 5FP"
+        "en": "💲️700 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_DC_Fetch_MedicalGloves": {
       "name": {
-        "en": "Nasty Germs"
+        "en": "🩺️ Nasty Germs"
       },
       "description": {
         "en": "Sometime it's just better to be safe than sorry. How does anyone expect me to operate on them without proper gloves?! Anyway, I need a few, help me out and I'll pay."
@@ -1008,52 +1027,52 @@
         "en": "Find Medical Gloves"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$800 and 5FP"
+        "en": "💲️800 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_DC_Fetch_Painkillers01": {
       "name": {
-        "en": "Numb"
+        "en": "🩺️ Numb"
       },
       "description": {
         "en": "Have you ever had a swollen ankle and then a bear found you? No? Let me tell you, the local bears are feasting out there, that's why you want to have some painkillers with you at all time. I'm all out of them, so I'll pay for them. Check the pharmacies, hospitals, and even bathrooms."
       },
       "requirements": {
-        "en": "Find Painkillers - Blister"
+        "en": "Find Painkillers - Blister 💊️"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$600 and 5FP"
+        "en": "💲️600 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_DC_Fetch_PotassiumIodide01": {
       "name": {
-        "en": "Skyshine"
+        "en": "🩺️ Skyshine"
       },
       "description": {
         "en": "Some of the stronger squads ofte visit the nuclear areas in C0, even against my recommendations. I mean, it's a nuclear area. Anyway, I need to restock on Potassium Iodide so those guys actually have a chance to survive they start shining like Christmas trees. Pharmacies should have some."
       },
       "requirements": {
-        "en": "Find Potassium Iodide - Blister"
+        "en": "Find Potassium Iodide - Blister 💊️"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$600 and 5FP"
+        "en": "💲️600 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_DC_Fetch_TongueDepressors": {
       "name": {
-        "en": "Say 'AHH'"
+        "en": "🩺️ Say 'AHH'"
       },
       "description": {
         "en": "Every doctor has a way of doing things, but we're all gonna make you say that 'Ahhh'. We do need something to stick up in your mouth and I'll use whatever sticks you can bring. I carve in my free time so I'll make it work."
@@ -1080,30 +1099,30 @@
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$650 and 5FP"
+        "en": "💲️650 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_DC_Fetch_VitaminPills01": {
       "name": {
-        "en": "A, B, C, D"
+        "en": "🩺️ A, B, C, D"
       },
       "description": {
         "en": "It is not really expected that prisoners on this Island will bother with vitamins, but giving the body that extra boost will go a long way in messing up TEC1 and staying safe from other prisoners. I'll wait with the reward."
       },
       "requirements": {
-        "en": "Find Vitamin Pills - Blister"
+        "en": "Find Vitamin Pills - Blister 💊️"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$600 and 5FP"
+        "en": "💲️600 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_DC_Interact_Churches": {
       "name": {
-        "en": "Just A Conspiracy"
+        "en": "🩺️ Just A Conspiracy"
       },
       "description": {
         "en": "I am a man of science, but I have reasons to believe local churches have been used to manipulate a lot of local folks, and not in a good way. I will reward anyone who visits a couple of churches and check if there is anything weird with Chalices around the altar."
@@ -1116,30 +1135,30 @@
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$700 and 5FP"
+        "en": "💲️700 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_DC_Interact_Fountains": {
       "name": {
-        "en": "Dirty Secrets"
+        "en": "🩺️ Dirty Secrets"
       },
       "description": {
         "en": "More people might be saved if I know what TEC1 is doing to them. Locals used to dip in the fountains a lot, so I need someone to check a few of them for any weird stuff hiding in there. They can be found in a lot of places around The Island, but the reward is still decent."
       },
       "requirements": {
-        "en": "Check fountains for suspicious materials"
+        "en": "Check fountains for suspicious materials ⛲️"
       },
       "translate_data": {
-        "type1:0,1,4,5": "❌️ ## ✅️",
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$800 and 5FP"
+        "en": "💲️800 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_DC_Fetch_MultiplePuppetParts": {
       "name": {
-        "en": "The Living Dead"
+        "en": "🩺️ The Living Dead"
       },
       "description": {
         "en": "On the topic of murder, I want you to decimate some TEC1 puppets. We need to find out what effects the BCU has on the body, so it's time for a little research party. Your part is to chop a few limbs and bring them to me, I will do the rest. There is a reward, you don't even have to look for the puppets, they will find you."
@@ -1158,12 +1177,12 @@
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$1,400 and 5FP"
+        "en": "💲️1,400 and ⭐️5FP"
       }
     },
     "QuestSetup:T2_DC_Fetch_AntiPain": {
       "name": {
-        "en": "Dangerous Surroundings"
+        "en": "🩺️ Dangerous Surroundings"
       },
       "description": {
         "en": "I never recommend taking different pills together, but why would the world's most famous criminals listen to a doctor? Antibiotics and Painkillers are out of stock, and people have started threatening me, so I'll reward anyone who brings some to the shop. Both can be found around pharmacies, hospitals, and even bathrooms."
@@ -1176,20 +1195,20 @@
       },
       "translate_data": {
         "translate_data_1": {
-          "type1:8,9,12,13": "❌️ ## ✅️"
+          "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️"
         },
         "translate_data_2": {
-          "type1:8,9,12,13": "❌️ ## ✅️"
+          "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️"
         },
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$1,500 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Isopropyl alcohol at $700 and 0FP"
+        "en": "💲️1,500 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️x Isopropyl alcohol at 💲️700 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_DC_Fetch_AntiPoison": {
       "name": {
-        "en": "Painless"
+        "en": "🩺️ Painless"
       },
       "description": {
         "en": "It beats the heck out of me why one would go near radiation, but when they do, they usually come running in here looking for help. If I don't have Activated Charcoal in my stock, the Armorer guy steps in and handles it very effectively. With a gun. Find some anti-radiation and anti-poison stuff, the reward is waiting."
@@ -1210,12 +1229,12 @@
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$1,500 and 10FP<br>%sector% Trader's Shop Discounts:<br>3x Emergency Bandage at $350 and 0FP<br>1x Emergency Bandage Pack at $1,550 and 0FP"
+        "en": "💲️1,500 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️3x Emergency Bandage at 💲️350 and ⭐️0FP<br>🔖️1x Emergency Bandage Pack at 💲️1,550 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_DC_Fetch_Crutch": {
       "name": {
-        "en": "All-terrain Crutches"
+        "en": "🩺️ All-terrain Crutches"
       },
       "description": {
         "en": "Over 62.5% of prisoners get their legs messed up at some point. Okay, I just made that up, but you get the point, I need more crutches in stock. They will probably become lethal weapons as well, but I don't mind, I'll still have a reward ready for anyone who finds some."
@@ -1224,33 +1243,34 @@
         "en": "Find Crutches"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$1,450 and 10FP<br>%sector% Trader's Shop Discounts:<br>2x Painkillers - Blister at $1,500 and 0FP"
+        "en": "💲️1,450 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️2x Painkillers - Blister at $1,500 and 0FP"
       }
     },
     "QuestSetup:T2_DC_Fetch_EmergencyBandagePack": {
       "name": {
-        "": ""
+        "en": "🩺️ When Bad Gets Worse"
       },
       "description": {
-        "": ""
+        "en": "When two squads get into a fight, I usually don't have enough beds for everyone, but what I do have are bandages. Until recently that is. The stock is empty, and some of the guys are becoming my regular customers. U urgently need to restock, so I have a little something ready for whoever finds some packs."
       },
       "requirements": {
-        "": ""
+        "en": "Find Emergency Bandage Pack"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "": ""
+        "en": "💲️1,550 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts.<br>🔖️5x Antibiotics - 1000mg at 💲️100 and ⭐️ 0FP"
       }
     },
     "QuestSetup:T2_DC_Fetch_HemostaticDressing": {
       "name": {
-        "en": "To Bleed Or Not to Bleed"
+        "en": "🩺️ To Bleed Or Not to Bleed"
       },
       "description": {
         "en": "Wound treatment is always better in the hands of a pro like me. As it stands, I will start to use the wrong equipment when it comes to bleeding because I'm all out of Hemostatic Dressings. As I wait for someone to help out with that, I'll try not to kill too many of my patients. Your best bets are hospitals and pharmacies."
@@ -1259,11 +1279,11 @@
         "en": "Find Hemostatic Dressing"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$1,600 and 10FP<br>%sector% Trader's Shop Discounts.<br>3x Emergency Bandage at $300 and 0FP"
+        "en": "💲️1,600 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts.<br>🔖️3x Emergency Bandage at $300 and 0FP"
       }
     },
     "QuestSetup:T2_DC_Fetch_IsopropylAlcohol": {
@@ -1277,7 +1297,7 @@
         "": ""
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
@@ -1286,7 +1306,7 @@
     },
     "QuestSetup:T2_DC_Fetch_MedicalSet": {
       "name": {
-        "en": "The Beauty Doctor"
+        "en": "🩺️ The Beauty Doctor"
       },
       "description": {
         "en": "I never assumed that so many hardcore prisoners would care about how they look, but when they want a change, the come to me. I need full gear for any surgery type of business and that includes shirts, pants, masks, and of cource, gloves to protect my tender hands. I need the whole set, so when you find it, bring it."
@@ -1305,26 +1325,26 @@
       },
       "translate_data": {
         "translate_data_1": {
-          "type1:8,9,12,13": "❌️ ## ✅️"
+          "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️"
         },
         "translate_data_2": {
-          "type1:8,9,12,13": "❌️ ## ✅️"
+          "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️"
         },
         "translate_data_3": {
-          "type1:8,9,12,13": "❌️ ## ✅️"
+          "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️"
         },
         "translate_data_4": {
-          "type1:8,9,12,13": "❌️ ## ✅️"
+          "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️"
         },
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$1,450 and 10FP<br>%sector% Trader's Shop Discounts:<br>3x Emergency Bandage at $300 and 0FP<br>1x Antibiotics - Blister - 1000mg at $1,500 and 0FP<br>1x Potassium Iodide Pills - Blister at $250 and 0FP"
+        "en": "💲️1,450 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️3x Emergency Bandage at 💲️300 and ⭐️0FP<br>🔖️1x Antibiotics - Blister at 💲️1,500 and ⭐️0FP<br>🔖️1x Potassium Iodide Pills - Blister at 💲️250 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_DC_Fetch_PressureDressing": {
       "name": {
-        "en": "Under Pressure"
+        "en": "🩺️ Under Pressure"
       },
       "description": {
         "en": "Being in a gunfight is as much pressure as when I have to do plastic surgery on a serial killer, but having some Pressure Dressings at hand helps calm the nerves. The only thing is, I have none, so I'm panicking a bit here. Go through the pharmacies and hospitals, bring me some, and I'll dish out a reward"
@@ -1333,16 +1353,16 @@
         "en": "Find Pressure Dressing"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$1,520 and 10FP<br>%sector% Trader's Shop Discounts:<br>3x Hermostatic Dressing at $650 and 0FP"
+        "en": "💲️1,520 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️3x Hermostatic Dressing at 💲️650 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_DC_Fetch_VitaminPills02": {
       "name": {
-        "en": "Vitamin Overdose"
+        "en": "🩺️ Vitamin Overdose"
       },
       "description": {
         "en": "I've seen a lot of weird eating habits, but chugging vitamins is not as helpfull as one might think. I recommend a daily dose to everyone who buys them, but why listen to a pro? The shop doesn't have any vitamins left, so I need a bunch. They can be found at all the usual medical places, so find some and come for the reward."
@@ -1351,29 +1371,29 @@
         "en": "Find Vitamin Pills - Box"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$1,500 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Isopropyl alcohol at $700 and 0FP"
+        "en": "💲️1,500 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Isopropyl alcohol at 💲️700 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_DC_Interact_CheckGraves": {
       "name": {
-        "en": "Dead People Talking"
+        "en": "🩺️ Dead People Talking"
       },
       "description": {
         "en": "I don't like it as much as anyone, but in the name of science and, survival I need someone to check a few graveyards for sign of anything weird. Maybe there is more to those puppets than we know. Or maybe I will pay you fot nothing. You get the reward in any case."
       },
       "requirements": {
-        "en": "Check graves for signs of abnormalities"
+        "en": "Check graves for signs of abnormalities 🪦️"
       },
       "translate_data": {
         "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "en": "$2,000 and 15FP<br>%sector% Trader's Shop Discounts:<br>3x Classics Cigarettes Pack at $100 and 0FP"
+        "en": "💲️2,000 and ⭐️15FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️3x Classics Cigarettes Pack at 💲️100 and ⭐️0FP"
       }
     },
     "QuestSetup:T3_DC_Fetch_AllMedicalJars": {
@@ -1412,19 +1432,31 @@
     },
     "QuestSetup:T3_DC_Fetch_EmergencySet": {
       "name": {
-        "": ""
+        "en": "🩺️ Dire Situations"
       },
       "description": {
-        "": ""
+        "en": "It is getting wild out there, new squads are forming each day and new raids happen by the hour. I need all the emergency products ready to go or else there will be a lot of dead bodies on my beds. I'll pay well, so try to collect everything I need and collect the prize."
       },
-      "requirements": {
-        "": ""
+      "requirements_1": {
+        "en": "Find Tourniquet"
+      },
+      "requirements_2": {
+        "en": "Find Pressure Dressing"
+      },
+      "requirements_3": {
+        "en": "Find Hermostatic Dressing"
+      },
+      "requirements_4": {
+        "en": "Find Bandage"
+      },
+      "requirements_5": {
+        "en": "Find Alcohol"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️"
       },
       "rewards": {
-        "": ""
+        "en": "💲️2,450 and ⭐️20FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️5x Tourniquet at 💲️1,000 and ⭐️0FP"
       }
     },
     "QuestSetup:T3_DC_Fetch_GoldMemoryModule": {
@@ -1463,19 +1495,20 @@
     },
     "QuestSetup:T3_DC_Fetch_MemoryModule": {
       "name": {
-        "": ""
+        "en": "🩺️ No Shame In Stupidity"
       },
       "description": {
-        "": ""
+        "en": "Using TEC1 tech to become permanently smarter? It's always easier with my aid, I'm a pro. How did I get that good? Practice. And I can't practice without Memory Modules. This requires visiting TEC1 bunkers, but I'm sure you can manage. Loot their storages and you're bound to fing some modules. Good luck!"
       },
       "requirements": {
-        "": ""
+        "en": "Find Memory Module"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "": ""
+        "en": "💲️2,350 and ⭐️20FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️10x Emergency Bandage at 💲️150 and ⭐️0FP<br>🔖️3x Preasure Dressing at 💲️600 and ⭐️0FP<br>🔖️2x Tourniquet at 💲️1,400 and ⭐️0FP"
       }
     },
     "QuestSetup:T3_DC_Fetch_MultiplePuppetParts": {
@@ -1497,19 +1530,20 @@
     },
     "QuestSetup:T3_DC_Fetch_PhoenixTears": {
       "name": {
-        "": ""
+        "en": "🩺️ Corporation Technology"
       },
       "description": {
-        "": ""
+        "en": "The cure of all cures, PT-29 Rapid Recovery Serum, also know as Phoenix Tears! It can cure anything, but the only place that has it are medical lockers in TEC1 bunkers. Bring lockpicks and walk silently or else you may end up using then yourself. Stay safe out there, and a handsome reward is waiting for you."
       },
       "requirements": {
-        "": ""
+        "en": "Find Phoenix Tears"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "": ""
+        "en": "💲️2,500 and ⭐️20FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️10x Tourniquet at 💲️500...<br>🔖️3x Painkillers - Jar at...<br>🔖️5x Burn Gel at 💲️500..."
       }
     },
     "QuestSetup:T3_DC_Fetch_PlasticSurgerySet": {
@@ -1548,19 +1582,34 @@
     },
     "QuestSetup:T3_DC_Interact_ScanAbandonedCity": {
       "name": {
-        "": ""
+        "en": "🩺️ Nuclear Mysteries ☢️"
       },
       "description": {
-        "": ""
+        "en": "Krsko is a city that is fading away from radiation in the C0 sector, but maybe we can learn something from it. Rewards are waiting for anyone who dares to check a few air conditioners, fountains, maybe even the children's playground. If no abnormalities are found, the reward still stands, don't worry."
       },
-      "requirements": {
-        "": ""
+      "requirements_1": {
+        "en": "Check air conditioner"
+      },
+      "requirements_2": {
+        "en": "Check fountains ⛲️"
+      },
+      "requirements_3": {
+        "en": "Check the children's playground for abnormalities"
       },
       "translate_data": {
-        "": ""
+        "translate_data_1":{
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️"
+        },
+        "translate_data_2":{
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️"
+        },
+        "translate_data_3":{
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️"
+        },
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "": ""
+        "en": "💲️4,000 and ⭐️30FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️2x Potassium Iodide Pills - Box at 💲️200 and ⭐️0FP"
       }
     },
     "QuestSetup:T3_DC_Mix_KillPuppetsNuclearBringContainer": {
@@ -1616,19 +1665,28 @@
     },
     "QuestSetup:T3_DC_Mix_KillRazorBringStimPacksC4": {
       "name": {
-        "": ""
+        "en": "🩺️ Technology Renaissance"
       },
       "description": {
-        "": ""
+        "en": "Razors are a thing to be studied. It is remarkable as much as it is straight-out frightening. Kill a few of them in the C4 bunker so we know what we're dealing with. It also seems we can have some use from them so bring a few of those intelligence Enhancement Ampules, any will do."
       },
-      "requirements": {
-        "": ""
+      "requirements_1": {
+        "en": "Kill Razors"
+      },
+      "requirements_2": {
+        "en": "Fetch Intelligence Enhancement Ampules"
       },
       "translate_data": {
-        "": ""
+        "translate_data_1": {
+          "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️"
+        },
+        "translate_data_2": {
+          "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️"
+        },
+        "completion_text": "TURN IN TO %sector% DOCTOR"
       },
       "rewards": {
-        "": ""
+        "en": "💲️7,500 and ⭐️35FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️3x Tourniquet at 💲️1,200 and ⭐️0FP"
       }
     },
     "QuestSetup:T3_DC_Mix_KillRazorBringStimPacksD1": {
@@ -1667,7 +1725,7 @@
     },
     "QuestSetup:T1_GG_Fetch_Batteries": {
       "name": {
-        "en": "Basic Power"
+        "en": "👕️ Basic Power"
       },
       "description": {
         "en": "Life on The Island can get scary at night, and I'm fresh out of batteries, even the little ones."
@@ -1680,12 +1738,12 @@
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$700 and 5FP"
+        "en": "💲️700 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_GG_Fetch_BobbyPins": {
       "name": {
-        "en": "Thief In The Making"
+        "en": "👕️ Thief In The Making"
       },
       "description": {
         "en": "It is not my concern that people make Lockpicks out of Bobby Pins, but the demand is high!"
@@ -1698,48 +1756,48 @@
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$500 and 5FP"
+        "en": "💲️500 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_GG_Fetch_ChocolateCandy": {
       "name": {
-        "en": "Sweet Tooth"
+        "en": "👕️ Sweet Tooth"
       },
       "description": {
         "en": "Even prisoners want a candy from time to time and my stock is empty. Find some Chocolate Candy and bring it to my shop."
       },
       "requirements": {
-        "en": "Find Chocolate Candies"
+        "en": "Find Chocolate Candies 🍫️"
       },
       "translate_data": {
         "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$580 and 5FP"
+        "en": "💲️580 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_GG_Fetch_DuctTape": {
       "name": {
-        "en": "Does It Move?"
+        "en": "👕️ Does It Move?"
       },
       "description": {
         "en": "Crafting things from houses to explosives always requires a bit of Duct Tape, and I'm all out."
       },
       "requirements": {
-        "en": "Find Duct Tape"
+        "en": "Find Duct Tape "
       },
       "translate_data": {
         "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$550 and 5FP"
+        "en": "💲️550 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_GG_Fetch_Glue": {
       "name": {
-        "en": "Glue Needed"
+        "en": "👕️ Glue Needed"
       },
       "description": {
         "en": "Not really sure what my customers use all that glue for, but who am I to question it. I need some help to refill my stock."
@@ -1752,12 +1810,12 @@
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$680 and 5FP"
+        "en": "💲️680 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_GG_Fetch_GrindingStone": {
       "name": {
-        "en": "Sharp As A Tack"
+        "en": "👕️ Sharp As A Tack"
       },
       "description": {
         "en": "All of our sharp tools are not really that sharp, so they can't be sold. A Grinding Stone will solve that problem."
@@ -1766,52 +1824,52 @@
         "en": "Find Grinding Stone"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$740 and 5FP"
+        "en": "💲️740 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_GG_Fetch_Needle": {
       "name": {
-        "en": "Searching Through A Haystack"
+        "en": "👕️ Searching Through A Haystack"
       },
       "description": {
         "en": "One can never have enough needles, but good luck finding them!"
       },
       "requirements": {
-        "en": "Find Needle"
+        "en": "Find Needle 🪡️"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$500 and 5FP"
+        "en": "💲️500 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_GG_Fetch_SewingKit": {
       "name": {
-        "en": "Sewing Orders"
+        "en": "👕️ Sewing Orders"
       },
       "description": {
         "en": "Patched clothes are better than no clothes and they, unfortunately, can't be patched without a proper Sewing Kit."
       },
       "requirements": {
-        "en": "Find Sewing Kit"
+        "en": "Find Sewing Kit 🪡️🧵️"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$800 and 5FP"
+        "en": "💲️800 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_GG_Fetch_SexyShorts": {
       "name": {
-        "en": "I Need of Sexy and Short"
+        "en": "👕️ I Need of Sexy and Short"
       },
       "description": {
         "en": "Some things never go out of fashion. Bring some Sexy Shorts and I'll pay you."
@@ -1820,16 +1878,16 @@
         "en": "Find Sexy Shorts"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$550 and 5FP"
+        "en": "💲️550 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_GG_Fetch_SmallToolbox": {
       "name": {
-        "en": "Basic Repairs"
+        "en": "👕️ Basic Repairs"
       },
       "description": {
         "en": "Things break. Some things need to be fixed. Even a Small Toolbox can do the job with the right technique."
@@ -1838,65 +1896,65 @@
         "en": "Find Small Tool Box"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$790 and 5FP"
+        "en": "💲️790 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_GG_Fetch_Soap": {
       "name": {
-        "en": "Hygiene 101"
+        "en": "👕️ Hygiene 101"
       },
       "description": {
         "en": "Hygiene is important, even in this wretched place. Find some soaps for me, just dont't drop one, The Island is full of prisoners after all."
       },
       "requirements": {
-        "en": "Find Soap"
+        "en": "Find Soap 🧼️"
       },
       "translate_data": {
         "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$620 and 5FP"
+        "en": "💲️620 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_GG_Interact_SabotageACs": {
       "name": {
-        "en": "Making A Buck"
+        "en": "👕️ Making A Buck"
       },
       "description": {
         "en": "It is hard to be a trader in this nasty place, but I do my best. If someone could just sabotage a few air conditioners here and there, I could sell more drinks at my place. Nobody likes being hot, right?"
       },
       "requirements": {
-        "en": "Sabotage air conditioner"
+        "en": "Sabotage air conditioner ⚡️"
       },
       "translate_data": {
         "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$800 and 5FP"
+        "en": "💲️800 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_GG_Interact_TelephoneBooths": {
       "name": {
-        "en": "Safety First"
+        "en": "👕️ Safety First"
       },
       "description": {
         "en": "You never know who's listening, so better make sure no one is. There are telephone booths all over The Island, and I will pay for someone to do a security check on each one in case they are bugged."
       },
       "requirements": {
-        "en": "Check telephone booths"
+        "en": "Check telephone booths 📞️"
       },
       "translate_data": {
         "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$800 and 5FP"
+        "en": "💲️800 and ⭐️5FP"
       }
     },
     "QuestSetup:T2_GG_Fetch_Backpack": {
@@ -1918,24 +1976,25 @@
     },
     "QuestSetup:T2_GG_Fetch_Bedroll": {
       "name": {
-        "": ""
+        "en": "👕️ Find Bedroll"
       },
       "description": {
-        "": ""
+        "en": "If someone doesn't have a base and a bed, anywhere is a good place to sleep. Bedroll maes things more comfortable and lowers fatigue quite a bit, so it's a well sold item."
       },
       "requirements": {
-        "": ""
+        "en": "Find Bedroll 🗞️"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "": ""
+        "en": "💲️1,300 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️5x Barbed Wire at 💲️150 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_GG_Fetch_Dildo": {
       "name": {
-        "en": "The Jackhammer"
+        "en": "👕️ The Jackhammer"
       },
       "description": {
         "en": "It's not exactly a tool, but we have to follow the trends around here."
@@ -1944,16 +2003,16 @@
         "en": "Find Dildo"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$1,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>3x Tool Box at $800 and 0FP"
+        "en": "💲️1,600 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️3x Tool Box at 💲️800 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_GG_Fetch_Drill": {
       "name": {
-        "en": "Home Improvement"
+        "en": "👕️ Home Improvement"
       },
       "description": {
         "en": "Drill is essential for building anything durable, but it is not always easy to get them. There a few old building sites around, but they are too dangerous for me. That's why the pay is good!"
@@ -1962,16 +2021,16 @@
         "en": "Find Drill"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$1,550 and 10FP"
+        "en": "💲️1,550 and ⭐️10FP"
       }
     },
     "QuestSetup:T2_GG_Fetch_PaintCans": {
       "name": {
-        "en": "Everyone's Artist"
+        "en": "👕️ Everyone's Artist"
       },
       "description": {
         "en": "Everything looks better with a coat of fresh new paint, and some prisoners are real artist. Even if you prefer black and white, bring some paint and get rewarded."
@@ -1984,65 +2043,66 @@
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$1,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>10x Soap at $50 and 0FP"
+        "en": "💲️1,600 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️10x Soap 🧼️ at 💲️50 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_GG_Fetch_Pickaxe": {
       "name": {
-        "en": "Local Miners"
+        "en": "👕️ Local Miners"
       },
       "description": {
         "en": "Every pickaxe is a trusty tool, even if not made of diamonds, and the're out of stock."
       },
       "requirements": {
-        "en": "Find Pickaxe"
+        "en": "Find Pickaxe ⛏️"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$1,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Small Spade at $100 and 0FP"
+        "en": "💲️1,600 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Small Spade at 💲️100 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_GG_Fetch_PortableElectricStove": {
       "name": {
-        "": ""
+        "en": "👕️ Cooking Appliance"
       },
       "description": {
-        "": ""
+        "en": "Cooking is complicated for some, but a travel stove can make it easy. If not, yo can always buy some food at our shop!"
       },
       "requirements": {
-        "": ""
+        "en": "Find Portable Electric Stove"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "": ""
+        "en": "💲️1,550 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Grinding Stone at 💲️1,200 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_GG_Fetch_Radio": {
       "name": {
-        "en": "Sounds of The Island"
+        "en": "👕️ Sounds of The Island"
       },
       "description": {
         "en": "The Island can be a lonely place, but not if you have a radio. Be careful when bringing it, if turner on, it could make you a target."
       },
       "requirements": {
-        "en": "Find Radio"
+        "en": "Find Radio 📻️"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$1,400 and 10FP<br>%sector% Trader's Shop Discounts:<br>3x Smartphone Battery at $400 and 0FP"
+        "en": "💲️1,400 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️3x Smartphone Battery at 💲️400 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_GG_Fetch_RebarCutter": {
       "name": {
-        "en": "Heavy Duty Tools"
+        "en": "👕️ Heavy Duty Tools"
       },
       "description": {
         "en": "A heavy duty tool indeed, but a true engineer will handle it with care."
@@ -2051,16 +2111,16 @@
         "en": "Find Rebar Cutter"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$1,500 and 10FP<br>%sector% Traders Shop Discounts:<br>1x Metal Detector at $3,000 and 0FP"
+        "en": "💲️1,500 and ⭐️10FP<br>🗺️%sector% Traders Shop Discounts:<br>🔖️1x Metal Detector at 💲️3,000 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_GG_Fetch_RedGhoul": {
       "name": {
-        "en": "Energy Spectacle"
+        "en": "👕️ Energy Spectacle"
       },
       "description": {
         "en": "There is not a lot that can keep you going as Red Ghoul can. Just be careful to avoid Kix, he will steal it and drink it."
@@ -2069,29 +2129,29 @@
         "en": "Find Red Ghoul Energy Dring"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$1,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>3x Canteen at $200 and 0FP"
+        "en": "💲️1,600 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️3x Canteen at 💲️200 and ⭐️0FP"
       }
     },
     "QuestSetup:T3_GG_Fetch_HikingBackpack": {
       "name": {
-        "en": "Modern Day Looters"
+        "en": "👕️ Modern Day Looters"
       },
       "description": {
         "en": "Hiking Backpacks can fit so much loot that there just isn't much sense in not having them. They sell realy good, so the store could always use some."
       },
       "requirements": {
-        "en": "Find Hiking Backpack"
+        "en": "Find Hiking Backpack 🎒️"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$2,200 and 20FP<br>%sector% Trader's Shop Discounts:<br>1x Bedroll at $700 and 0FP"
+        "en": "💲️2,200 and ⭐️20FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Bedroll at 💲️700 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_GG_Interact_Ads": {
@@ -2113,38 +2173,38 @@
     },
     "QuestSetup:T2_GG_Interact_AnalyzeFiles": {
       "name": {
-        "en": "Market Research"
+        "en": "👕️ Market Research"
       },
       "description": {
         "en": "My business is all about details, I can't sell my merchandise without knowing the market. There are files around all of the offices and business buildings on The Island, and there is so much information there that I just can't pass it up. I just need someone to find the files and let me know the locations, I will do the rest!"
       },
       "requirements": {
-        "en": "Locate files and folders around The Island"
+        "en": "Locate files and folders around The Island 📄️"
       },
       "translate_data": {
         "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$1,700 and 15FP<br>%sector% Trader's Shop Discounts:<br>1x Drill at $1,500 and 0FP"
+        "en": "💲️1,700 and ⭐️15FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Drill at 💲️1,500 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_GG_Interact_FaxMachines": {
       "name": {
-        "en": "Data Wipe"
+        "en": "👕️ Data Wipe"
       },
       "description": {
         "en": "People of the past used fax machines a lot. TEC01 might be digging around those and using the information to fortify their positions and maybe even listen in to any of the prisoners who still know how to use them. I know there is one at B0 Junkyard and at least one more in Z1 Trainyard. I will pay for erasing the data on them!"
       },
       "requirements": {
-        "en": "Erase data from fax machines"
+        "en": "Erase data from fax machines 🖨️"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$1,700 and 15FP<br>%sector% Trader's Shop Discounts:<br>1x Rebar Cutter at $2,000 and 0FP"
+        "en": "💲️1,700 and ⭐️15FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Rebar Cutter at 💲️2,000 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_GG_Interact_WW2": {
@@ -2319,19 +2379,20 @@
     },
     "QuestSetup:T3_GG_Fetch_Guitar": {
       "name": {
-        "": ""
+        "en": "👕️ Lucille"
       },
       "description": {
-        "": ""
+        "en": "Everyone thinks they can play a guitar, but good luck finding it. It's a luxury these days, but also a good alternative for a baseball bat."
       },
       "requirements": {
-        "": ""
+        "en": "Find Guitar 🎸️"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "": ""
+        "en": "💲️2,500 and ⭐️20FP<br>🗺️%sector% Traders Shop Discounts:<br>🔖️1x Metal Baseball Bat at 💲️600 and ⭐️0FP<br>🔖️1x Blaze Bat at 💲️1,500 and ⭐️0FP"
       }
     },
     "QuestSetup:T3_GG_Fetch_MetalDetector": {
@@ -2353,24 +2414,24 @@
     },
     "QuestSetup:T3_GG_Fetch_PortableFridge": {
       "name": {
-        "": ""
+        "en": "👕️ Cold'n'Fresh ❄️"
       },
       "description": {
-        "": ""
+        "en": "No point in buying all of the food from the shop if you also don't buy a fridge, and we're all out of fridges."
       },
       "requirements": {
-        "": ""
+        "en": "Find Portable Refridgerator"
       },
       "translate_data": {
-        "": ""
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️"
       },
       "rewards": {
-        "": ""
+        "en": "💲️2,450 and ⭐️20FP<br>🗺️%sector% Traders Shop Discounts:<br>🔖️5x Tool Box at 💲️600 and ⭐️0FP<br>🔖️10x Small Tool Box at 💲️500"
       }
     },
     "QuestSetup:T3_GG_Interact_AirportCommunications": {
       "name": {
-        "en": "Island Comms"
+        "en": "👕️ Island Comms"
       },
       "description": {
         "en": "It is crucial that we keep good communication around The Island, it will help us survive these TEC01 games they like to play with us. B2 airfield is crucial, so I need someone to do a maintenance check there. It isn’t complicated to find, but the place is full of sentries so I’ll pay well."
@@ -2383,15 +2444,15 @@
       },
       "translate_data": {
         "translate_data_1": {
-          "type1:0,1,4,5": "❌️ ## ✅️"
+          "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️"
         },
         "translate_data_2": {
-          "type1:0,1,4,5": "❌️ ## ✅️"
+          "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️"
         },
         "completion_text": "TURN IN TO %sector% GENERAL GOODS TRADER"
       },
       "rewards": {
-        "en": "$8,000 and 40FP<br>%sector% Traders Shop Discounts:<br>1x Base Expansion Kit Lvl1 at15,000 and 90FP"
+        "en": "💲️8,000 and ⭐️40FP<br>🗺️%sector% Traders Shop Discounts:<br>🔖️1x Base Expansion Kit Lvl1 at 💲️15,000 and ⭐️90FP"
       }
     },
     "QuestSetup:T3_GG_Interact_DisableAntennaDrums": {
@@ -2464,7 +2525,7 @@
     },
     "QuestSetup:T1_MC_Fetch_AeroplaneRepairKit": {
       "name": {
-        "en": "Bottom Gun"
+        "en": "🔧️ Bottom Gun"
       },
       "description": {
         "en": "Every punk that gets dropped here thinks that flying is easy. None of them can explain why I'm always out of Aeroplane Repair Kits! Visit an airfield or two and fetch some, I've got a prize waiting."
@@ -2473,16 +2534,16 @@
         "en": "Find an Aeroplane Repair Kit"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$3,000 and 5FP"
+        "en": "💲️3,000 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_MC_Fetch_BrakeOil": {
       "name": {
-        "en": "Road Sabotage"
+        "en": "🔧️ Road Sabotage"
       },
       "description": {
         "en": "It's a TV show, but some are trying to win a bit too hard. That's why I always check everyone's Brake Oil, I can't afford to lose customers. Check garages and gas stations, bring some, and get rewarded."
@@ -2491,16 +2552,16 @@
         "en": "Find Brake Oil"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$550 and 5FP"
+        "en": "💲️550 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_MC_Fetch_CarBatteryCables": {
       "name": {
-        "en": "Jump Start Me Gently"
+        "en": "🔧️ Jump Start Me Gently"
       },
       "description": {
         "en": "Running out of power is a bad, BAD thing, and somehow my Car Battery Cables stock is as empty as a bottle of whiskey! They are everywhere, houses, garages, even gas stations. Help me out and I'll give you a prize."
@@ -2509,16 +2570,16 @@
         "en": "Find Car Battery Cables"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$630 and 5FP"
+        "en": "💲️630 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_MC_Fetch_CarJack": {
       "name": {
-        "en": "In Need Of A Jack"
+        "en": "🔧️ In Need Of A Jack"
       },
       "description": {
         "en": "Sometime my customers have to fix their vehicles a bit before they come for the REAL repair here at my place, so Car Jacks sell like crazy. Sweep a garage or two and I reward you."
@@ -2527,34 +2588,34 @@
         "en": "Find a Car Jack"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$700 and 5FP"
+        "en": "💲️700 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_MC_Fetch_CarRepairKit": {
       "name": {
-        "en": "Car Tinker"
+        "en": "🔧️ Car Tinker"
       },
       "description": {
         "en": "I love car people, why trouble me if they can trouble themselves, right? Fetch some Car Repair Kits while I rest, can't expect me to work all day, cant't you?"
       },
       "requirements": {
-        "en": "Find a Car Repair Kit"
+        "en": "Find a Car Repair Kit 🧰️"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$660 and 5FP"
+        "en": "💲️660 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_MC_Fetch_GasolineCanisterSmall": {
       "name": {
-        "en": "Driving On Reserve"
+        "en": "🔧️ Driving On Reserve"
       },
       "description": {
         "en": "The Island ain't that small, and people hoard whatever little gas is left, so having a Small Gasoline Canister can come in handy. Shame I don't have any at my shop, but how about you change that? I'll reward you, don't worry."
@@ -2563,16 +2624,16 @@
         "en": "Find a Small Gasoline Canister"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$700 and 5FP"
+        "en": "💲️700 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_MC_Fetch_MetalScraps": {
       "name": {
-        "en": "Full Metal Mechanic"
+        "en": "🔧️ Full Metal Mechanic"
       },
       "description": {
         "en": "I can't patch all those bullet holes on your vehicles without some spare Metal Scraps. Shouldn't be hard to find, check Junkyard and old car wrecks and bring me a batch."
@@ -2585,12 +2646,12 @@
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$500 and 5FP"
+        "en": "💲️500 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_MC_Fetch_OilFilter": {
       "name": {
-        "en": "No Filter"
+        "en": "🔧️ No Filter"
       },
       "description": {
         "en": "When you put a lot of angry scum on the same island, Oil Filters mostly get used for making suppressors. I dont really care as long as I can sell them, but the current stock size is zero. Check around wrecked cars and I’ll pay you."
@@ -2599,16 +2660,16 @@
         "en": "Find an Oil Filter"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$650 and 5FP"
+        "en": "💲️650 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_MC_Fetch_WrenchPipe": {
       "name": {
-        "en": "Torque Applier 9000"
+        "en": "🔧️ Torque Applier 9000"
       },
       "description": {
         "en": "I hate when tools get used to smash heads, but what can you do? I do sometimes use them to fix vehicles. My Wrench Pipe stock is running empty so fetch some for me, I'll wait with the reward."
@@ -2617,16 +2678,16 @@
         "en": "Find a Wrench Pipe"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$550 and 5FP"
+        "en": "💲️550 and ⭐️5FP"
       }
     },
     "QuestSetup:T1_MC_Interact_DisableTVs": {
       "name": {
-        "en": "Illegal Streaming"
+        "en": "🔧️ Illegal Streaming"
       },
       "description": {
         "en": "If I can't watch TV, nobody can! I want you to make sure that all those little old TVs can't be used. But be subtle so they have to figure it out."
@@ -2639,12 +2700,12 @@
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$800 and 5FP"
+        "en": "💲️800 and ⭐️5FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_CarBattery": {
       "name": {
-        "en": "One Battery To Rule Them All"
+        "en": "🔧️ One Battery To Rule Them All"
       },
       "description": {
         "en": "Cars are useless without a battery, so you better help out and bring me one. I'm not gonna beg, a reward is ready so go, tear through the houses, gas stations, and garages. Just don't be an asshole and bring me an empty one."
@@ -2653,16 +2714,16 @@
         "en": "Find a Car Battery"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$1,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Car Jack at $1,500 and 0FP"
+        "en": "💲️1,600 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Car Jack at 💲️1,500 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_DirtbikeBody": {
       "name": {
-        "en": "Made For Dirt"
+        "en": "🔧️ Made For Dirt"
       },
       "description": {
         "en": "I'm a sucker for Dirtbikes, but it seems that everyone else is too. I need a Dirtbike Body for a personal project, but my stock is empty. There are not a lot of them, but I'll take any kind. You'll have most luck around garagesm but people drop them everywhere so keep you eyes open."
@@ -2671,16 +2732,16 @@
         "en": "Find any Dirtbike Body"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$1,550 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Car Repair Kit at $1,200 and 0FP"
+        "en": "💲️1,550 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Car Repair Kit at 💲️1,200 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_DirtbikeBrakelight": {
       "name": {
-        "en": "Braking Good"
+        "en": "🔧️ Braking Good"
       },
       "description": {
         "en": "You know that feeling when someone brake checks you and you want to mash their head in with a Wrench Pipe? It's even less fun if they don't have a brake light installed, and they cant't have it if my stock is empty! I'll pay, so bring me some."
@@ -2689,16 +2750,16 @@
         "en": "Find a Dirtbike Brake Light"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$1,200 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Dirtbike Front Wheel Cover at $150 and 0FP"
+        "en": "💲️1,200 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Dirtbike Front Wheel Cover at 💲️150 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_DirtbikeFender": {
       "name": {
-        "en": "Riding Clean"
+        "en": "🔧️ Riding Clean"
       },
       "description": {
         "en": "A lot of punks keep saying ''It's always raining on The Island, my clothes are wet, boo-hoo'', well imagine them riding a Dirbike through the woods without a Fender. Find some for me so I can make money on them. You'll make some too, don't worry."
@@ -2707,16 +2768,16 @@
         "en": "Find a Dirtbike Fender"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$1,450 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Dirtbike Headlights at $150 and 0FP"
+        "en": "💲️1,450 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Dirtbike Headlights at 💲️150 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_DirtbikeFrontShield": {
       "name": {
-        "en": "Just A Bit Of Safety"
+        "en": "🔧️ Just A Bit Of Safety"
       },
       "description": {
         "en": "It's not smart going into a gunfight on a Dirtbike, but it sure is fun. People buy the Front Shield as a placebo, but I don't mind them clearing my stock. Speaking of that, the stock is empty so I'll reward anyone who finds a Front Shield and brings it to the shop."
@@ -2725,16 +2786,16 @@
         "en": "Find a Dirbike Front Shield"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$1,480 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Dirtbike Hellride Skull at $200 and 0FP"
+        "en": "💲️1,480 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Dirtbike Hellride Skull at 💲️200 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_DirtbikeHeadlights": {
       "name": {
-        "en": "A Speck Of Light"
+        "en": "🔧️ A Speck Of Light"
       },
       "description": {
         "en": "My Dirtbike project is on hold because guess what, driving it at night is suicide. Driving it at night without Headlights is even worse. Since I can't continue without them, you better find me some. If I would go search for it I would start at garages, gas statons, and maybe even the motocross track in the Z3 Sector. I'll be waiting with the reward."
@@ -2743,16 +2804,16 @@
         "en": "Find Dirtbike Headlights"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$1,580 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Dirtbike Front Shield at $200 and 0FP"
+        "en": "💲️1,580 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Dirtbike Front Shield at 💲️200 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_DirtbikeHellriderSkull": {
       "name": {
-        "en": "Hellrider's Paradise"
+        "en": "🔧️ Hellrider's Paradise"
       },
       "description": {
         "en": "Nobody is interesting enough for me to give a damn, but when a horned Dirtbike goes right at ya, you start to feel stuff. Check the garages, check the Junkyard in the B0 sector, and bring me a Hellride Skull, I promise I'll be gererous."
@@ -2761,16 +2822,16 @@
         "en": "Find a Dirtbike Hellrider Skull"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$1,580 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Dirbike Fender at $200 and 0FP"
+        "en": "💲️1,580 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Dirbike Fender at 💲️200 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_DirtbikeWheels": {
       "name": {
-        "en": "Rolling Thunder"
+        "en": "🔧 Rolling Thunder"
       },
       "description": {
         "en": "Finding the right wheels for the Dirtbike is a piece of work, that's why I pay for it, can't be bothered to look by myself. I need both the frint and the back one, so tear down the Junkyard in B0 and the nearby garages. I'll pay big bucks for this one."
@@ -2779,16 +2840,16 @@
         "en": "Find a Dirtbike Wheels"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %complete%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$1,400 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Dirtbike Hellride Body at $1,000 and 0FP<br>1x Dirtbike Body at $1,000 and 0FP"
+        "en": "💲️1,400 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Dirtbike Hellride Body at 💲️1,000 and ⭐️0FP<br>🔖️1x Dirtbike Body at 💲️1,000 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_GasolineCanister": {
       "name": {
-        "en": "Serious Refill"
+        "en": "🔧️ Serious Refill"
       },
       "description": {
         "en": "Let's not mess around, gasoline cant't be found just anywhere and everyone knows that, but it's a real survival tool. If a person is serious about surviving, they need gas and a lot of it. The problem is storing it. That's wy I need a Gasoline Canister. You find it, I'll pay for it."
@@ -2797,16 +2858,16 @@
         "en": "Find a Gasoline Canister"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$1,500 and 5FP<br>%sector% Trader's Shop Discounts:<br>2x Small Gasoline Canister at $150 and 0FP"
+        "en": "💲️1,500 and ⭐️5FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️2x Small Gasoline Canister at 💲️150 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_MC_Fetch_MotorbikeBattery": {
       "name": {
-        "en": "Motorbike Juice"
+        "en": "🔧️ Motorbike Juice"
       },
       "description": {
         "en": "Punks who can't drive keep destroying whole bikes along with the batteries and everything so guess what, I need Motorbike Batteries, and I need them yesterday. There's a prize in it for you."
@@ -2815,47 +2876,47 @@
         "en": "Find a Motorbike Battery"
       },
       "translate_data": {
-        "type1:8,9,12,13": "❌️ ## ✅️",
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$1,600 and 10FP<br>%sector% Trader's Shop Discounts:<br>1x Small Vehicle Storage Rack at $1,000 and 0FP"
+        "en": "💲️1,600 and ⭐️10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Small Vehicle Storage Rack at 💲️1,000 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_MC_Interact_DisableGenerators": {
       "name": {
-        "en": "No Power"
+        "en": "🔧️ No Power ⚡️"
       },
       "description": {
         "en": "Everyone thinks the're smart by using old construction generators. Well, do a little 'touch-up' on a few of them. Why? Why not, I'll even pay."
       },
       "requirements": {
-        "en": "Disable generators"
+        "en": "Disable generators ⚡️"
       },
       "translate_data": {
         "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$2,000 and 20FP<br>%sector% Trader's Shop Discounts:<br>1x Car Jack at $1,000 and 0FP"
+        "en": "💲️2,000 and ⭐️20FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Car Jack at 💲️1,000 and ⭐️0FP"
       }
     },
     "QuestSetup:T2_MC_Interact_ResetCarLift": {
       "name": {
-        "en": "Eliminating Competition"
+        "en": "🔧️ Eliminating Competition"
       },
       "description": {
         "en": "I heard some punks think I'm expensive. Well, I don't care! Do a little sabotaging so everyone needs to come here. You will find Car Lifts in all local car workshops."
       },
       "requirements": {
-        "en": "Sabotage car lifts"
+        "en": "Sabotage car lifts ⚡️"
       },
       "translate_data": {
         "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
         "completion_text": "TURN IN TO %sector% MECHANIC"
       },
       "rewards": {
-        "en": "$2,000 and 20FP<br>%sector% Trader's Shop Discounts:<br>2x Car Repair Kit at $800 and 0FP"
+        "en": "💲️2,000 and ⭐️20FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️2x Car Repair Kit at 💲️800 and ⭐️0FP"
       }
     },
     "QuestSetup:T3_MC_Fetch_CarLights": {
@@ -3111,6 +3172,204 @@
       },
       "rewards": {
         "": ""
+      }
+    },
+    "QuestSetup:T1_RH_Kill_Chicken": {
+      "name": {
+        "en": "🐾️ Dinner Runs"
+      },
+      "description": {
+        "en": "I need fresh poultry that hasn't gone sour in the sun. Go fetch it before it flaps off on you."
+      },
+      "requirements": {
+        "en": "Kill a chicken 🐔️"
+      },
+      "translate_data": {
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% HUNTING TRADER"
+      },
+      "rewards": {
+        "en": "💲️1,000 and ⭐5FP"
+      }
+    },
+    "QuestSetup:T1_RH_Fetch_DonkeyHead": {
+      "name": {
+        "en": "🐾️ Proof of Mule"
+      },
+      "description": {
+        "en": "I need the head off a donkey, clean and brought back in one piece. Don't ask why."
+      },
+      "requirements": {
+        "en": "Find a Donkey Head at 80%+ durability"
+      },
+      "translate_data": {
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% HUNTING TRADER"
+      },
+      "rewards": {
+        "en": "💲️1,200 and ⭐5FP"
+      }
+    },
+    "QuestSetup:T1_RH_Fetch_AnimalFat": {
+      "name": {
+        "en": "🐾️ Fat Chance"
+      },
+      "description": {
+        "en": "Fat is filthy work, and I'd like you to realize that. Bring some on and try not to slick up my floor."
+      },
+      "requirements": {
+        "en": "Find Animal Fat"
+      },
+      "translate_data": {
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% HUNTING TRADER"
+      },
+      "rewards": {
+        "en": "💲️750 and ⭐5FP"
+      }
+    },
+    "QuestSetup:T1_RH_Fetch_AnimalSkin": {
+      "name": {
+        "en": "🐾️ Save Your Skin"
+      },
+      "description": {
+        "en": "Folks keep asking for leather like it's hanging on hooks already. Show me you can work a clean skin and you'll get something in return."
+      },
+      "requirements": {
+        "en": "Find Animal Skin at 80%+ durability"
+      },
+      "translate_data": {
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% HUNTING TRADER"
+      },
+      "rewards": {
+        "en": "💲️850 and ⭐5FP"
+      }
+    },
+    "QuestSetup:T1_RH_Kill_Donkey": {
+      "name": {
+        "en": "🐾️ Long Ears Down"
+      },
+      "description": {
+        "en": "Don't take this as a grand hunt. It ain't. Kill a donkey and show me you can do work without a story to dress it up."
+      },
+      "requirements": {
+        "en": "Kill a donkey 🫏️"
+      },
+      "translate_data": {
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% HUNTING TRADER"
+      },
+      "rewards": {
+        "en": "💲️1,200 and ⭐5FP"
+      }
+    },
+    "QuestSetup:T1_RH_Fetch_PluckedChicken": {
+      "name": {
+        "en": "🐾️ Pluck It"
+      },
+      "description": {
+        "en": "Botching a good bird is easier than you'd think. I want one cleaned proper, feathers off and pride swallowed."
+      },
+      "requirements": {
+        "en": "Find a Plucked Chicken 🐔️ at 80%+ durability"
+      },
+      "translate_data": {
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% HUNTING TRADER"
+      },
+      "rewards": {
+        "en": "💲️1,000 and ⭐5FP"
+      }
+    },
+    "QuestSetup:T1_RH_Fetch_Bone": {
+      "name": {
+        "en": "🐾️ Bones to Pick"
+      },
+      "description": {
+        "en": "Bones are useful to more people than you'd think. Bring me a handful and I'll make the trouble worth it."
+      },
+      "requirements": {
+        "en": "Find Bones 🦴️"
+      },
+      "translate_data": {
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% HUNTING TRADER"
+      },
+      "rewards": {
+        "en": "💲️750 and ⭐5FP"
+      }
+    },
+    "QuestSetup:T1_RH_Kill_Rabbit": {
+      "name": {
+        "en": "🐾️ No Second Chances"
+      },
+      "description": {
+        "en": "Small game's got a way of disappearing the second you think you've got it cornered. Let's hope you won't let that happen."
+      },
+      "requirements": {
+        "en": "Kill a rabbit 🐇️"
+      },
+      "translate_data": {
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% HUNTING TRADER"
+      },
+      "rewards": {
+        "en": "💲️1,000 and ⭐5FP"
+      }
+    },
+    "QuestSetup:T1_RH_Fetch_SkinnedRabbit": {
+      "name": {
+        "en": "🐾️ Clean Cut"
+      },
+      "description": {
+        "en": "Anybody can make a mess of small game. I wanna see what you do after the kill, so bring back a flawless, naked bunny."
+      },
+      "requirements": {
+        "en": "Find a Skinned Rabbit 🐇️ at 80%+ durability"
+      },
+      "translate_data": {
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% HUNTING TRADER"
+      },
+      "rewards": {
+        "en": "💲️1,000 and ⭐5FP"
+      }
+    },
+    "QuestSetup:T2_RH_Fetch_GoatHead": {
+      "name": {
+        "en": "🐾️ Horns First"
+      },
+      "description": {
+        "en": "I want a goat's head, not some tale about where it ran off to. Bring it interact."
+      },
+      "requirements": {
+        "en": "Find a Goat Head at 80%+ durability"
+      },
+      "translate_data": {
+        "type1:8,9,12,13": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% HUNTING TRADER"
+      },
+      "rewards": {
+        "en": "💲️2,000 and ⭐10FP and Bow Stabilizer"
+      }
+    },
+    "QuestSetup:T2_RH_Kill_Deer": {
+      "name": {
+        "en": "🐾️ Buck Stops Here"
+      },
+      "description": {
+        "en": "Bring down proper game and do it clean. I want proof you can handle it when the target doesn't sit still for you."
+      },
+      "requirements": {
+        "en": "Kill a deer 🦌️"
+      },
+      "translate_data": {
+        "type1:0,1,4,5": "%complete%/%required% ❌️ ## %required%/%required% ✅️",
+        "completion_text": "TURN IN TO %sector% HUNTING TRADER"
+      },
+      "rewards": {
+        "en": "💲️2,000 and ⭐10FP<br>🗺️%sector% Trader's Shop Discounts:<br>🔖️1x Manchu Bow at 💲️800<br>🔖️10x Broadhead Metal..."
       }
     }
   }
